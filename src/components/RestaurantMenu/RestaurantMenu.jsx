@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from '../../i18n/LanguageContext';
 import './RestaurantMenu.scss';
 
 export default function RestaurantMenu() {
   const [activeTab, setActiveTab] = useState('menu-mon-chinh');
+  const { dictionary } = useTranslation();
+  const diningData = dictionary.dining;
 
   const menuData = {
     'menu-mon-chinh': [
@@ -66,8 +69,10 @@ export default function RestaurantMenu() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
         >
-          <span className="section-tag shiny-text">LOCAL TASTES & FLAVORS</span>
-          <h2 className="section-title">Thực Đơn Nhà Hàng</h2>
+          <h2 className="section-title">{diningData.title}</h2>
+          <p style={{ maxWidth: '650px', margin: '0.5rem auto 0', color: '#666', fontSize: '0.95rem' }}>
+            {diningData.subtitle}
+          </p>
           <div className="section-divider"></div>
         </motion.div>
 

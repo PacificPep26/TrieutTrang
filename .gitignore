@@ -25,3 +25,7 @@ dist-ssr
 .blackboxcli/
 public/hero-video-original.mp4
 
+
+.next
+next-env.d.ts
+.next-dev

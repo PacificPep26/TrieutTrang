@@ -1,127 +1,99 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+'use client';
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from '../../i18n/LanguageContext';
 import './Services.scss';
 
 export default function Services() {
-  // Placeholder SVG to prevent CORS/ORB blocking and reduce network lag
-  const placeholderImg = 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22%3E%3Crect fill=%22%23e0e0e0%22 width=%22800%22 height=%22600%22/%3E%3Ctext x=%22400%22 y=%22300%22 font-size=%2224%22 fill=%22%23999%22 text-anchor=%22middle%22 dy=%22.3em%22%3EImage Not Available%3C/text%3E%3C/svg%3E';
+  const { dictionary } = useTranslation();
+  const sData = dictionary.services;
+  const [activeTab, setActiveTab] = useState('all');
 
-  const experiences = [
-    {
-      id: 'atv',
-      title: 'ATV / Mô tô địa hình',
-      desc: 'Thử thách lòng dũng cảm, tự tay chinh phục những cồn cát nhấp nhô đầy phấn khích với động cơ mạnh mẽ.',
-      price: '800k / Xe',
-      image: '/images/atv.jpg',
-      fallback: placeholderImg
-    },
-    {
-      id: 'jeep',
-      title: 'Chinh Phục Xe Jeep',
-      desc: 'Thả mình vào những góc nghiêng ngoạn mục, phi vút lên đỉnh đồi cát trắng và chụp những bức hình check-in cực ngầu.',
-      price: '800k / Xe',
-      image: '/images/jeep.jpg',
-      fallback: placeholderImg
-    },
-    {
-      id: 'camel',
-      title: 'Cưỡi Lạc Đà Sa Mạc',
-      desc: 'Cảm giác độc bản như lạc vào sa mạc Sahara thực thụ. Thong thả dạo bước và chụp ảnh nghệ thuật cùng những chú lạc đà dễ thương.',
-      price: '200k / Lượt',
-      image: '/images/camel.jpg',
-      fallback: placeholderImg
-    },
-    {
-      id: 'ostrich',
-      title: 'Cưỡi Đà Điểu Kịch Tính',
-      desc: 'Trải nghiệm ngồi trên lưng đà điểu chạy sải bước cực kỳ vui nhộn và độc đáo. Hoạt động thu hút cả người lớn và trẻ nhỏ.',
-      price: '100k / Lượt',
-      image: '/images/ostrich.jpg',
-      fallback: placeholderImg
-    }
-  ];
+  const placeholderImg = 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22%3E%3Crect fill=%22%23e0e0e0%22 width=%22800%22 height=%22600%22/%3E%3Ctext x=%22400%22 y=%22300%22 font-size=%2224%22 fill=%22%23999%22 text-anchor=%22middle%22 dy=%22.3em%22%3EBau Cat Trang%3C/text%3E%3C/svg%3E';
 
-  // Framer Motion variants
-  const headerVariants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: { 
-      opacity: 1, 
-      y: 0, 
-      transition: { type: 'spring', stiffness: 70, damping: 15 } 
-    }
-  };
-
-  const containerVariants = {
-    hidden: {},
-    visible: {
-      transition: {
-        staggerChildren: 0.12,
-      }
-    }
-  };
-
-  const cardVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { 
-      opacity: 1, 
-      y: 0, 
-      transition: { type: 'spring', stiffness: 60, damping: 15 } 
-    }
-  };
+  const filteredItems = activeTab === 'all' 
+    ? sData.items 
+    : sData.items.filter(item => item.type === activeTab);
 
   return (
     <section className="services-section" id="dich-vu">
       <div className="container">
         <motion.div 
           className="section-header text-center"
-          variants={headerVariants}
-          initial="hidden"
-          whileInView="visible"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.5 }}
         >
-          <span className="section-tag shiny-text">ADVENTURE & EXPERIENCES</span>
-          <h2 className="section-title">Dịch Vụ & Trải Nghiệm</h2>
+          <h2 className="section-title">{sData.title}</h2>
           <div className="section-divider"></div>
         </motion.div>
 
+        {/* Tab Selection */}
+        <div className="services-tabs">
+          <button 
+            className={`tab-btn ${activeTab === 'all' ? 'active' : ''}`}
+            onClick={() => setActiveTab('all')}
+          >
+            {sData.tabs.all}
+          </button>
+          <button 
+            className={`tab-btn ${activeTab === 'jeep' ? 'active' : ''}`}
+            onClick={() => setActiveTab('jeep')}
+          >
+            {sData.tabs.jeep}
+          </button>
+          <button 
+            className={`tab-btn ${activeTab === 'adventure' ? 'active' : ''}`}
+            onClick={() => setActiveTab('adventure')}
+          >
+            {sData.tabs.adventure}
+          </button>
+        </div>
+
+        {/* Services Grid */}
         <motion.div 
           className="services-grid"
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.15 }}
+          layout
         >
-          {experiences.map(exp => (
-            <motion.div 
-              key={exp.id} 
-              className="service-card"
-              variants={cardVariants}
-              whileHover={{ 
-                y: -8, 
-                scale: 1.02,
-                boxShadow: "0px 20px 45px rgba(0, 0, 0, 0.08)"
-              }}
-              whileTap={{ scale: 0.98 }}
-            >
-              <div className="card-img-wrapper">
-                <img 
-                  src={exp.image} 
-                  onError={(e) => { e.target.src = exp.fallback; }} 
-                  alt={exp.title} 
-                />
-                <div className="price-badge">{exp.price}</div>
-              </div>
-              <div className="card-content">
-                <h3 className="card-title">{exp.title}</h3>
-                <p className="card-desc">{exp.desc}</p>
-                <div className="card-footer">
-                  <a href="https://zalo.me/0901234567" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm">
-                    <span className="material-icons">chat</span> Đặt Ngay
-                  </a>
+          <AnimatePresence>
+            {filteredItems.map(item => (
+              <motion.div 
+                key={item.id} 
+                className="service-card"
+                layout
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.95 }}
+                transition={{ duration: 0.3 }}
+                whileHover={{ y: -8, boxShadow: "0px 20px 45px rgba(0, 0, 0, 0.08)" }}
+              >
+                <div className="card-img-wrapper">
+                  <img 
+                    src={item.image} 
+                    onError={(e) => { e.target.src = placeholderImg; }} 
+                    alt={item.title} 
+                  />
+                  <div className="price-badge">{item.price}</div>
+                  {item.badge && <div className="schedule-badge">{item.badge}</div>}
                 </div>
-              </div>
-            </motion.div>
-          ))}
+                <div className="card-content">
+                  <h3 className="card-title">{item.title}</h3>
+                  <p className="card-desc">{item.desc}</p>
+                  <div className="card-footer">
+                    <a 
+                      href="https://zalo.me/0901234567" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="btn btn-primary btn-sm"
+                    >
+                      <span className="material-icons">chat</span> {sData.bookBtn}
+                    </a>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </AnimatePresence>
         </motion.div>
       </div>
     </section>

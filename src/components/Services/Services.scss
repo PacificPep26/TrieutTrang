@@ -1,29 +1,93 @@
 @use '../../styles/variables' as *;
 
 .services-section {
-  padding: $spacing-lg 0;
-  background-color: $color-sand-light;
+  padding: 4.5rem 0;
+  background-color: #FAF8F5; /* Màu cát ấm nhẹ */
+  border-top: 1px solid rgba(0, 0, 0, 0.04);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+
+  @media (max-width: 768px) {
+    padding: 3rem 0;
+  }
 }
 
+.services-tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2.2rem;
+  flex-wrap: wrap;
+
+  .tab-btn {
+    padding: 0.55rem 1.4rem;
+    font-size: 0.88rem;
+    font-weight: 700;
+    font-family: $font-title;
+    border: 1px solid rgba(223, 182, 111, 0.4);
+    background: #ffffff;
+    color: #444;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+
+    &:hover {
+      border-color: $color-gold;
+      color: $color-gold;
+      transform: translateY(-2px);
+    }
+
+    &.active {
+      background: $color-gold;
+      color: #ffffff;
+      border-color: $color-gold;
+      box-shadow: 0 4px 15px rgba(223, 182, 111, 0.35);
+    }
+
+    @media (max-width: 576px) {
+      padding: 0.45rem 1rem;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+/* Lưới dịch vụ: 4 card trên desktop, 2 card trên tablet, 2 card trên mobile gọn gàng */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2.5rem;
-  margin-top: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  @media (max-width: 640px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
 }
 
 .service-card {
   background-color: #fff;
-  border-radius: 4px;
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: $shadow-premium;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
   display: flex;
   flex-direction: column;
+  border: 1px solid rgba(223, 182, 111, 0.18);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  }
 }
 
 .card-img-wrapper {
   position: relative;
-  aspect-ratio: 4/3;
+  aspect-ratio: 16/10;
   overflow: hidden;
 
   img {
@@ -32,55 +96,121 @@
     object-fit: cover;
     transition: transform $transition-slow;
   }
+
+  @media (max-width: 640px) {
+    aspect-ratio: 4/3;
+  }
 }
 
 .service-card:hover .card-img-wrapper img {
-  transform: scale(1.06);
+  transform: scale(1.08);
+}
+
+.schedule-badge {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  background-color: rgba(18, 18, 18, 0.75);
+  backdrop-filter: blur(4px);
+  color: #ffffff;
+  padding: 0.3rem 0.65rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  border-radius: 4px;
+  letter-spacing: 0.3px;
+
+  @media (max-width: 640px) {
+    padding: 0.2rem 0.45rem;
+    font-size: 0.65rem;
+  }
 }
 
 .price-badge {
   position: absolute;
-  bottom: 1rem;
-  right: 1rem;
+  bottom: 0.75rem;
+  right: 0.75rem;
   background-color: $color-dark;
   color: $color-gold;
-  padding: 0.4rem 1rem;
-  font-family: $font-sans;
+  padding: 0.35rem 0.8rem;
+  font-family: $font-title;
   font-size: 0.8rem;
   font-weight: 700;
-  letter-spacing: 0.05em;
-  border-radius: 2px;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+  @media (max-width: 640px) {
+    padding: 0.25rem 0.6rem;
+    font-size: 0.7rem;
+    bottom: 0.5rem;
+    right: 0.5rem;
+  }
 }
 
 .card-content {
-  padding: 1.8rem;
+  padding: 1.25rem;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+
+  @media (max-width: 640px) {
+    padding: 0.85rem;
+  }
 }
 
 .card-title {
-  font-size: 1.4rem;
-  font-style: italic;
-  margin-bottom: 0.8rem;
+  font-size: 1.05rem;
+  font-family: $font-title;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
   color: $color-dark;
+  line-height: 1.35;
+
+  @media (max-width: 640px) {
+    font-size: 0.88rem;
+    margin-bottom: 0.35rem;
+  }
 }
 
 .card-desc {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: $color-gray;
-  margin-bottom: 1.8rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
   flex-grow: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+  @media (max-width: 640px) {
+    font-size: 0.75rem;
+    margin-bottom: 0.75rem;
+    -webkit-line-clamp: 2;
+  }
 }
 
 .card-footer {
-  border-top: 1px solid $color-light-gray;
-  padding-top: 1.2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  padding-top: 0.85rem;
   display: flex;
   justify-content: flex-end;
 
   .btn {
     width: 100%;
     justify-content: center;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 0.75rem;
+    padding: 0.55rem 0.8rem;
+    gap: 0.35rem;
+
+    .material-icons {
+      font-size: 16px;
+    }
+
+    @media (max-width: 640px) {
+      padding: 0.45rem 0.5rem;
+      font-size: 0.7rem;
+    }
   }
 }

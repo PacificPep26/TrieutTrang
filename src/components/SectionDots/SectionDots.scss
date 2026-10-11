@@ -1,0 +1,67 @@
+@use '../../styles/variables' as *;
+
+.section-dots {
+  position: fixed;
+  right: 28px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 90;
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+
+  // phones: not enough room beside the content
+  @media (min-width: 992px) {
+    display: flex;
+  }
+}
+
+.section-dot {
+  position: relative;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgba(128, 128, 128, 0.45);
+  transition: all $transition-normal;
+
+  // bigger invisible hit area so the tiny dot is still easy to click
+  &::before {
+    content: '';
+    position: absolute;
+    inset: -8px;
+  }
+
+  &:hover {
+    background: $color-gold;
+  }
+
+  &.active {
+    background: $color-gold;
+    width: 7px;
+    height: 7px;
+    margin-left: -1px; // keep centered with the 5px dots
+  }
+
+  &:hover .section-dot-label {
+    opacity: 1;
+    transform: translate(0, -50%);
+  }
+}
+
+.section-dot-label {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translate(6px, -50%);
+  white-space: nowrap;
+  padding: 4px 10px;
+  border-radius: 4px;
+  background: rgba(18, 18, 18, 0.85);
+  color: #fff;
+  font-family: $font-sans;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  opacity: 0;
+  pointer-events: none;
+  transition: all $transition-normal;
+}

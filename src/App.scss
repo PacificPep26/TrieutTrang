@@ -5,5 +5,79 @@
 .app-container {
   overflow-x: hidden;
   position: relative;
-  background-color: $color-sand-light;
+  background-color: #fff;
+}
+
+/* CTA Banner Section */
+.cta-banner-section {
+  position: relative;
+  padding: 5.5rem 1.5rem;
+  background: linear-gradient(135deg, #1b1916 0%, #2e261b 100%);
+  color: #ffffff;
+  border-top: 1px solid rgba(210, 159, 68, 0.2);
+  border-bottom: 1px solid rgba(210, 159, 68, 0.2);
+
+  .cta-title {
+    font-family: $font-title;
+    font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    letter-spacing: -0.01em;
+  }
+
+  .cta-desc {
+    font-size: 1.05rem;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 680px;
+    margin: 0 auto 2.5rem;
+    line-height: 1.6;
+  }
+
+  .cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.85rem 2rem;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: all 0.3s ease;
+
+      .material-icons {
+        font-size: 20px;
+      }
+    }
+
+    .btn-primary {
+      background: $color-gold;
+      color: #ffffff;
+      border: 1px solid $color-gold;
+      box-shadow: 0 6px 20px rgba(210, 159, 68, 0.35);
+
+      &:hover {
+        background: lighten($color-gold, 8%);
+        transform: translateY(-2px);
+      }
+    }
+
+    .btn-outline-light {
+      background: transparent;
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.1);
+        border-color: #ffffff;
+        transform: translateY(-2px);
+      }
+    }
+  }
 }

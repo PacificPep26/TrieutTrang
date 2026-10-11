@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from '../../i18n/LanguageContext';
 import './Gallery.scss';
 
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState(null);
+  const { dictionary } = useTranslation();
+  const gData = dictionary.gallery;
 
   const placeholderImg = 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22%3E%3Crect fill=%22%23e0e0e0%22 width=%22800%22 height=%22600%22/%3E%3Ctext x=%22400%22 y=%22300%22 font-size=%2224%22 fill=%22%23999%22 text-anchor=%22middle%22 dy=%22.3em%22%3EImage Not Available%3C/text%3E%3C/svg%3E';
 
@@ -71,8 +74,12 @@ export default function Gallery() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
         >
-          <span className="section-tag shiny-text">VISUAL MEMORIES</span>
-          <h2 className="section-title">Thư Viện Ảnh Check-in</h2>
+          <h2 className="section-title">{gData.title}</h2>
+          {gData.subtitle && (
+            <p style={{ maxWidth: '650px', margin: '0.5rem auto 0', color: '#666', fontSize: '0.95rem' }}>
+              {gData.subtitle}
+            </p>
+          )}
           <div className="section-divider"></div>
         </motion.div>
 

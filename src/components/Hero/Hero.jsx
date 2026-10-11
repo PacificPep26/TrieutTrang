@@ -1,16 +1,25 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from '../../i18n/LanguageContext';
 import './Hero.scss';
 
 export default function Hero({ onBooking }) {
   const [videoLoaded, setVideoLoaded] = useState(false);
+  const { dictionary } = useTranslation();
+  const heroData = dictionary.hero;
   
-  const titleText = "Bàu Cát Trắng";
+  const titleText = heroData.title || "Bàu Cát Trắng";
   const words = titleText.split(" ");
 
+  const videoRef = useRef(null);
   const handleVideoLoad = () => {
     setVideoLoaded(true);
   };
+
+  // Next SSR: video may finish loading before React hydrates and attaches onLoadedData
+  useEffect(() => {
+    if (videoRef.current?.readyState >= 2) setVideoLoaded(true);
+  }, []);
 
   // Framer Motion variants
   const containerVariants = {
@@ -56,6 +65,7 @@ export default function Hero({ onBooking }) {
     <section className="hero" id="dieu-huong">
       <div className="hero-background">
         <video
+          ref={videoRef}
           autoPlay
           muted
           loop
@@ -63,7 +73,7 @@ export default function Hero({ onBooking }) {
           onLoadedData={handleVideoLoad}
           className={`hero-video ${videoLoaded ? 'loaded' : ''}`}
         >
-          <source src="/hero_v.mp4" type="video/mp4" />
+          <source src="/videos/hero.mp4" type="video/mp4" />
         </video>
         <div className="hero-overlay" />
         <div className="hero-particles">
@@ -72,9 +82,10 @@ export default function Hero({ onBooking }) {
               key={i} 
               className="particle"
               style={{
-                left: `${Math.random() * 100}%`,
-                animationDelay: `${Math.random() * 5}s`,
-                animationDuration: `${3 + Math.random() * 4}s`
+                // deterministic pseudo-random so server and client HTML match (no hydration error)
+                left: `${(i * 37) % 100}%`,
+                animationDelay: `${(i * 1.7) % 5}s`,
+                animationDuration: `${3 + ((i * 2.3) % 4)}s`
               }}
             />
           ))}
@@ -91,7 +102,7 @@ export default function Hero({ onBooking }) {
           className="hero-tag"
           variants={tagVariants}
         >
-          THIÊN ĐƯỜNG SA MẠC MŨI NÉ
+          {heroData.tag}
         </motion.span>
         
         <motion.h1 
@@ -117,7 +128,7 @@ export default function Hero({ onBooking }) {
           className="hero-subtitle"
           variants={childVariants}
         >
-          Trải nghiệm tốc độ đỉnh cao, cưỡi lạc đà giữa sa mạc cát trắng và tận hưởng ẩm thực địa phương độc đáo.
+          {heroData.subtitle}
         </motion.p>
         
         <motion.div 
@@ -130,7 +141,7 @@ export default function Hero({ onBooking }) {
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
           >
-            Khám phá dịch vụ
+            {heroData.exploreBtn}
           </motion.button>
           <motion.a 
             href="#thu-vien" 
@@ -138,7 +149,7 @@ export default function Hero({ onBooking }) {
             whileHover={{ scale: 1.05, y: -2, backgroundColor: 'rgba(255,255,255,0.1)' }}
             whileTap={{ scale: 0.95 }}
           >
-            Xem thư viện ảnh
+            {heroData.galleryBtn}
           </motion.a>
         </motion.div>
       </motion.div>

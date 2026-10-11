@@ -1,0 +1,145 @@
+@use '../../styles/variables' as *;
+
+.trust-bar-section {
+  position: relative;
+  z-index: 10;
+  padding: 3.5rem 1.5rem;
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+
+  @media (max-width: 768px) {
+    padding: 2.2rem 1rem;
+  }
+
+  .trust-header {
+    margin-bottom: 2rem;
+
+    .section-tag {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: $color-gold;
+      margin-bottom: 0.4rem;
+      text-transform: uppercase;
+    }
+
+    .trust-main-title {
+      font-family: $font-title;
+      font-size: clamp(1.4rem, 2.5vw, 2rem);
+      font-weight: 800;
+      color: $color-dark;
+
+      @media (max-width: 768px) {
+        font-size: 1.25rem;
+      }
+    }
+  }
+
+  /* Responsive lưới: 4 cột desktop, 2 cột tablet, 2 cột mobile */
+  .trust-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.2rem;
+    }
+
+    @media (max-width: 640px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.75rem;
+    }
+  }
+
+  .trust-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Căn giữa toàn bộ card */
+    text-align: center;   /* Căn giữa chữ */
+    padding: 1.8rem 1.2rem;
+    background: #faf8f5;
+    border-radius: 12px;
+    border: 1px solid rgba(223, 182, 111, 0.18);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+
+    @media (max-width: 640px) {
+      padding: 1.2rem 0.85rem;
+      border-radius: 10px;
+    }
+
+    &:hover {
+      background: #ffffff;
+      border-color: $color-gold;
+      box-shadow: 0 10px 25px rgba(223, 182, 111, 0.18);
+      transform: translateY(-3px);
+
+      .icon-wrapper {
+        background: $color-gold;
+        color: #ffffff;
+        transform: scale(1.08);
+      }
+    }
+
+    .icon-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.1rem; /* Đưa icon ra chính giữa */
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
+      background: rgba(223, 182, 111, 0.15);
+      color: $color-gold;
+      transition: all 0.3s ease;
+
+      @media (max-width: 640px) {
+        width: 42px;
+        height: 42px;
+        margin-bottom: 0.75rem;
+        border-radius: 10px;
+      }
+
+      svg, .material-icons {
+        display: block;
+        margin: auto;
+      }
+    }
+
+    .trust-info {
+      width: 100%;
+
+      .trust-item-title {
+        font-size: 1.05rem;
+        font-weight: 700;
+        font-family: $font-title;
+        color: $color-dark;
+        margin-bottom: 0.4rem;
+        line-height: 1.35;
+
+        @media (max-width: 640px) {
+          font-size: 0.85rem;
+          margin-bottom: 0.3rem;
+        }
+      }
+
+      .trust-item-desc {
+        font-size: 0.85rem;
+        color: #666666;
+        line-height: 1.5;
+        margin: 0;
+
+        @media (max-width: 640px) {
+          font-size: 0.72rem;
+          line-height: 1.4;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}

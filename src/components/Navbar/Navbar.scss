@@ -6,16 +6,20 @@
   left: 0;
   width: 100%;
   z-index: 90;
-  padding: 1.5rem 0;
+  padding: 1.2rem 0;
   transition: all $transition-normal;
   color: $color-sand-light;
 
   &.scrolled {
-    background: rgba(18, 18, 18, 0.85);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    padding: 0.9rem 0;
+    background: rgba(18, 18, 18, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 0.75rem 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  @media (max-width: 640px) {
+    padding: 0.65rem 0;
   }
 }
 
@@ -23,13 +27,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
+  max-width: 1380px;
+  margin: 0 auto;
+
+  @media (max-width: 640px) {
+    padding: 0 0.85rem;
+  }
 }
 
 .header-left {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.2rem;
+
+  @media (max-width: 640px) {
+    gap: 0.5rem;
+  }
 }
 
 .menu-toggle {
@@ -37,14 +51,19 @@
   border: none;
   color: currentColor;
   cursor: pointer;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0.2rem;
   transition: color $transition-normal;
 
   &:hover {
     color: $color-gold;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 1.45rem;
   }
 }
 
@@ -67,17 +86,147 @@
 }
 
 .header-center .logo {
-  font-family: $font-sans;
-  font-size: clamp(1.1rem, 2vw, 1.4rem);
-  font-weight: 700;
-  letter-spacing: 0.25em;
+  font-family: $font-title;
+  font-size: clamp(1rem, 2vw, 1.35rem);
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-decoration: none;
+  color: #ffffff;
+
+  @media (max-width: 640px) {
+    letter-spacing: 0.08em;
+    font-size: 0.95rem;
+  }
+
+  @media (max-width: 380px) {
+    letter-spacing: 0.04em;
+    font-size: 0.85rem;
+  }
 }
 
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  @media (max-width: 640px) {
+    gap: 0.4rem;
+  }
+}
+
+/* Nút chọn ngôn ngữ nhỏ gọn tinh tế */
+.lang-selector-wrapper {
+  position: relative;
+
+  .lang-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 0.3rem 0.55rem;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 0.78rem;
+    font-weight: 700;
+    font-family: $font-title;
+    transition: all 0.2s ease;
+
+    @media (max-width: 640px) {
+      padding: 0.25rem 0.45rem;
+      font-size: 0.72rem;
+    }
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.22);
+      border-color: $color-gold;
+    }
+
+    .flag-icon {
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 18px;
+        height: auto;
+        border-radius: 2px;
+      }
+    }
+
+    .lang-code {
+      font-size: 0.75rem;
+    }
+
+    .arrow-icon {
+      font-size: 0.95rem;
+      margin-left: -2px;
+    }
+  }
+
+  .lang-dropdown-menu {
+    position: absolute;
+    top: calc(100% + 6px);
+    right: 0;
+    background: #1e1e1e;
+    border: 1px solid rgba(223, 182, 111, 0.3);
+    border-radius: 10px;
+    padding: 0.4rem;
+    min-width: 135px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+
+    .lang-option {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.45rem 0.65rem;
+      background: none;
+      border: none;
+      color: #dddddd;
+      width: 100%;
+      text-align: left;
+      font-size: 0.82rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+
+      &:hover, &.active {
+        background: rgba(223, 182, 111, 0.2);
+        color: $color-gold;
+        font-weight: 600;
+      }
+
+      .flag {
+        font-size: 0.95rem;
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 18px;
+          height: auto;
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+}
+
+/* Nút Đặt Vé Ngay: Ẩn trên mobile để menu cực kỳ thoáng đãng, chỉ hiện trên tablet/desktop */
 .header-cta {
   display: none;
+  font-family: $font-title;
+  font-weight: 700;
+  border-radius: 6px;
 
-  @media (min-width: 576px) {
+  @media (min-width: 641px) {
     display: inline-flex;
+    padding: 0.55rem 1.2rem;
+    font-size: 0.78rem;
   }
 }
 
@@ -91,11 +240,17 @@
   background-color: $color-dark-gray;
   z-index: 100;
   color: $color-sand-light;
-  padding: 2rem;
+  padding: 2rem 1.8rem;
   display: flex;
   flex-direction: column;
   box-shadow: $shadow-floating;
   transition: left $transition-slow;
+  overflow-y: auto;
+
+  @media (max-width: 380px) {
+    width: 290px;
+    padding: 1.5rem;
+  }
 
   &.open {
     left: 0;
@@ -106,13 +261,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 3.5rem;
+  margin-bottom: 2rem;
 
   .logo {
-    font-family: $font-sans;
+    font-family: $font-title;
     font-size: 1.1rem;
-    font-weight: 700;
-    letter-spacing: 0.15em;
+    font-weight: 800;
+    letter-spacing: 0.12em;
     color: $color-gold;
   }
 }
@@ -132,18 +287,62 @@
   }
 }
 
+.drawer-lang-selector {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 0.75rem;
+  margin-bottom: 1.8rem;
+
+  .drawer-lang-title {
+    font-size: 0.75rem;
+    color: #888;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+
+  .drawer-lang-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.35rem;
+  }
+
+  .drawer-lang-btn {
+    padding: 0.4rem 0.2rem;
+    font-size: 0.78rem;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid transparent;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+
+    &.active {
+      background: $color-gold;
+      color: #111;
+      border-color: $color-gold;
+    }
+  }
+}
+
 .drawer-menu {
   display: flex;
   flex-direction: column;
-  gap: 1.8rem;
+  gap: 1.4rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .drawer-link {
-  font-family: $font-sans;
-  font-size: 1.05rem;
-  font-weight: 500;
-  letter-spacing: 0.05em;
+  font-family: $font-title;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
   display: block;
+  color: #fff;
+  text-decoration: none;
 
   &:hover {
     color: $color-gold;
@@ -152,10 +351,13 @@
 }
 
 .contact-drawer {
-  margin-top: 2rem;
-  color: $color-gold;
+  margin-top: 1.8rem;
+  color: $color-gold !important;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
-  padding-top: 1.5rem;
+  padding-top: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .drawer-overlay {
@@ -175,4 +377,11 @@
     opacity: 1;
     pointer-events: auto;
   }
+}
+
+.flag-icon img,
+.flag img {
+  display: block;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.15);
 }

@@ -64,6 +64,9 @@ export default function Gallery() {
     }
   };
 
+  const [showAll, setShowAll] = useState(false);
+  const visibleImages = showAll ? images : images.slice(0, 4);
+
   return (
     <section className="gallery-section" id="thu-vien">
       <div className="container">
@@ -90,7 +93,7 @@ export default function Gallery() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.05 }}
         >
-          {images.map(img => (
+          {visibleImages.map(img => (
             <motion.div 
               key={img.id} 
               className={`masonry-item masonry-item--${img.size}`}
@@ -114,6 +117,19 @@ export default function Gallery() {
             </motion.div>
           ))}
         </motion.div>
+
+        {images.length > 4 && (
+          <div className="gallery-actions">
+            <button 
+              type="button" 
+              className="btn btn--outline gallery-toggle-btn"
+              onClick={() => setShowAll(!showAll)}
+            >
+              <span>{showAll ? 'Thu gọn hình ảnh' : `Xem thêm ảnh (${images.length - 4}+)`}</span>
+              <span className="material-icons">{showAll ? 'expand_less' : 'expand_more'}</span>
+            </button>
+          </div>
+        )}
       </div>
 
       {/* Lightbox Modal */}

@@ -216,15 +216,15 @@
   }
 }
 
-/* Nút Đặt Vé Ngay: Ẩn trên mobile để menu cực kỳ thoáng đãng, chỉ hiện trên tablet/desktop */
+/* Nút Đặt Vé Ngay: Ẩn triệt để trên mobile để menu cực kỳ thoáng đãng, chỉ hiện trên tablet/desktop */
 .header-cta {
-  display: none;
+  display: none !important;
   font-family: $font-title;
   font-weight: 700;
   border-radius: 6px;
 
-  @media (min-width: 641px) {
-    display: inline-flex;
+  @media (min-width: 768px) {
+    display: inline-flex !important;
     padding: 0.55rem 1.2rem;
     font-size: 0.78rem;
   }

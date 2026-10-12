@@ -52,13 +52,13 @@
   }
 }
 
-/* Lưới dịch vụ: 4 card trên desktop, 2 card trên tablet, 2 card trên mobile gọn gàng */
+/* Lưới dịch vụ: Tự cân đối hoàn hảo cho 5 dịch vụ (3 trên hàng đầu, 2 căn giữa hoặc lưới 3 cột cân xứng) */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 992px) {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.25rem;
   }
@@ -66,6 +66,11 @@
   @media (max-width: 640px) {
     grid-template-columns: repeat(2, 1fr);
     gap: 0.75rem;
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 }
 

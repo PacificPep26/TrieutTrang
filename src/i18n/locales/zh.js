@@ -60,7 +60,7 @@ export const zh = {
         desc: "下午1:30启程，沐浴在夕阳余晖下，漫步仙女溪并探访传统渔村人文风貌。",
         price: "800,000 越南盾 / 车（最多6人）",
         badge: "午后 13:30 - 18:00",
-        image: "/images/jeep.jpg"
+        image: "/images/jeep-gate.jpg"
       },
       {
         id: "atv",
@@ -69,7 +69,7 @@ export const zh = {
         desc: "亲手掌控油门征服陡峭沙峰，在连绵起伏的沙浪中释放澎湃激情与绝对自由。",
         price: "800,000 越南盾 / 20分钟",
         badge: "极速刺激",
-        image: "/images/atv.jpg"
+        image: "/images/atv-convoy.jpg"
       },
       {
         id: "camel",
@@ -78,7 +78,7 @@ export const zh = {
         desc: "化身沙漠旅人漫步无垠沙丘，与温顺骆驼合影，随手定格迪拜/撒哈拉异域风情大片。",
         price: "200,000 越南盾 / 圈 / 人",
         badge: "网美打卡",
-        image: "/images/camel-tour.jpg"
+        image: "/images/camel-real.jpg"
       },
       {
         id: "ostrich",
@@ -87,7 +87,7 @@ export const zh = {
         desc: "适合亲子家庭与年轻情侣的趣味项目，感受骑在鸵鸟背上奔跑的欢笑与独特乐趣。",
         price: "100,000 越南盾 / 圈 / 人",
         badge: "亲子最爱",
-        image: "/images/ostrich.jpg"
+        image: "/images/ostrich-real.jpg"
       },
       {
         id: "sandboard",
@@ -107,24 +107,24 @@ export const zh = {
     subtitle: "在白沙丘的每一步，都是大自然精雕细琢的壮丽画卷",
     items: [
       {
-        title: "传奇沙丘沿海公路",
-        desc: "一面是浩瀚碧海，一面是起伏沙原，与炫彩吉普车合影是美奈之行的灵魂标志。",
-        image: "/images/hero-fallback.jpg"
+        title: "朝庄迎宾大门与吉普车队",
+        desc: "缤纷炫彩的专属越野吉普车队与动力澎湃的ATV摩托在此整齐列队迎接八方来客。",
+        image: "/images/jeep-gate.jpg"
       },
       {
-        title: "白沙丘之巅与莲花湖",
-        desc: "被誉为越南的小撒哈拉，洁白细沙与湛蓝湖水相互映衬，宛如沙漠绿洲奇迹。",
-        image: "/images/spot-lake.jpg"
+        title: "白沙丘之巅与莲花湖绿洲",
+        desc: "被誉为越南的小撒哈拉，纯净白沙与湖水相互辉映，从高空俯瞰宛如沙海翡翠。",
+        image: "/images/spot-lake-real.jpg"
       },
       {
-        title: "沙漠游牧打卡阶梯与骆驼",
-        desc: "极具异域风情的沙漠阶梯拍照点，与温顺骆驼合影，拍摄专属高级时尚大片。",
-        image: "/images/gallery-2.jpg"
+        title: "I LOVE BAU TRANG 标志打卡",
+        desc: "白沙丘最具代表性的人气地标，传统奥黛、红旗与温顺骆驼同框，尽显美奈风情。",
+        image: "/images/spot-ibautrang.jpg"
       },
       {
-        title: "浪漫海岸线与美奈渔港",
-        desc: "蔚蓝海景与中南沿海迷人自然风光交相辉映，感受纯粹宁静的海洋之美。",
-        image: "/images/spot-beach.jpg"
+        title: "车队列阵征服起伏沙脊",
+        desc: "感受长列越野车队在浩瀚金沙间穿梭疾驰的震撼视觉盛宴，定格无畏探索瞬间。",
+        image: "/images/fleet-sand.jpg"
       }
     ]
   },

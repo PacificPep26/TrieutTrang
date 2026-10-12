@@ -11,18 +11,18 @@ export default function Gallery() {
   const placeholderImg = 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 800 600%22%3E%3Crect fill=%22%23e0e0e0%22 width=%22800%22 height=%22600%22/%3E%3Ctext x=%22400%22 y=%22300%22 font-size=%2224%22 fill=%22%23999%22 text-anchor=%22middle%22 dy=%22.3em%22%3EImage Not Available%3C/text%3E%3C/svg%3E';
 
   const images = [
-    { id: 1, path: '/images/atv.jpg', fallback: placeholderImg, alt: 'Trải nghiệm ATV', size: 'tall' },
-    { id: 2, path: '/images/camel.jpg', fallback: placeholderImg, alt: 'Cưỡi Lạc Đà', size: 'medium' },
-    { id: 3, path: '/images/jeep.jpg', fallback: placeholderImg, alt: 'Xe Jeep', size: 'short' },
-    { id: 4, path: '/images/ostrich.jpg', fallback: placeholderImg, alt: 'Đà Điểu', size: 'tall' },
-    { id: 5, path: '/images/gallery-1.jpg', fallback: placeholderImg, alt: 'Check-in Bàu Cát Trắng', size: 'medium' },
-    { id: 6, path: '/images/background.jpg', fallback: placeholderImg, alt: 'Cảnh Quan', size: 'short' },
-    { id: 7, path: '/images/hero-fallback.jpg', fallback: placeholderImg, alt: 'Hero Fallback', size: 'tall' },
-    { id: 8, path: '/images/atv.jpg', fallback: placeholderImg, alt: 'ATV Adventure', size: 'medium' },
-    { id: 9, path: '/images/camel.jpg', fallback: placeholderImg, alt: 'Lạc Đà Sa Mạc', size: 'short' },
-    { id: 10, path: '/images/jeep.jpg', fallback: placeholderImg, alt: 'Xe Jeepoff-road', size: 'tall' },
-    { id: 11, path: '/images/ostrich.jpg', fallback: placeholderImg, alt: 'Đà Điểu Safari', size: 'medium' },
-    { id: 12, path: '/images/background.jpg', fallback: placeholderImg, alt: 'Sa Mạc Cát Trắng', size: 'short' }
+    { id: 1, path: '/images/jeep-gate.jpg', fallback: placeholderImg, alt: 'Đội xe Jeep Triều Trang', size: 'tall' },
+    { id: 2, path: '/images/camel-real.jpg', fallback: placeholderImg, alt: 'Nàng thơ cưỡi lạc đà Triều Trang', size: 'medium' },
+    { id: 3, path: '/images/atv-convoy.jpg', fallback: placeholderImg, alt: 'Đoàn xe địa hình ATV leo đồi cát', size: 'short' },
+    { id: 4, path: '/images/spot-ibautrang.jpg', fallback: placeholderImg, alt: 'Check-in I Love Bau Trang', size: 'tall' },
+    { id: 5, path: '/images/fleet-sand.jpg', fallback: placeholderImg, alt: 'Đội xe địa hình trên sa mạc cát', size: 'medium' },
+    { id: 6, path: '/images/spot-lake-real.jpg', fallback: placeholderImg, alt: 'Toàn cảnh hồ ốc đảo Bàu Trắng', size: 'short' },
+    { id: 7, path: '/images/fleet-flag.jpg', fallback: placeholderImg, alt: 'Đoàn xe Jeep & ATV cờ đỏ sao vàng', size: 'tall' },
+    { id: 8, path: '/images/ostrich-real.jpg', fallback: placeholderImg, alt: 'Trải nghiệm cưỡi đà điểu Triều Trang', size: 'medium' },
+    { id: 9, path: '/images/gallery-2.jpg', fallback: placeholderImg, alt: 'Bậc thang check-in thời trang du mục', size: 'short' },
+    { id: 10, path: '/images/sandboard.jpg', fallback: placeholderImg, alt: 'Trượt cát sa mạc Bàu Trắng', size: 'tall' },
+    { id: 11, path: '/images/gallery-1.jpg', fallback: placeholderImg, alt: 'Check-in cùng lạc đà sa mạc', size: 'medium' },
+    { id: 12, path: '/images/background.jpg', fallback: placeholderImg, alt: 'Flycam toàn cảnh hồ sen Bàu Bà', size: 'short' }
   ];
 
   const openLightbox = (imgUrl) => {

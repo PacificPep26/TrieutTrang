@@ -60,7 +60,7 @@ export const en = {
         desc: "Depart at 1:30 PM to admire romantic golden dunes at dusk, visiting Fairy Stream and traditional Fishing Village.",
         price: "800,000 VND / Car (Up to 6 guests)",
         badge: "01:30 - 06:00 PM",
-        image: "/images/jeep.jpg"
+        image: "/images/jeep-gate.jpg"
       },
       {
         id: "atv",
@@ -69,7 +69,7 @@ export const en = {
         desc: "Take the wheel to conquer steep sandy slopes and feel the absolute rush of adrenaline on the dunes.",
         price: "800,000 VND / 20 Mins",
         badge: "High Adrenaline",
-        image: "/images/atv.jpg"
+        image: "/images/atv-convoy.jpg"
       },
       {
         id: "camel",
@@ -78,7 +78,7 @@ export const en = {
         desc: "Dress up like a true desert wanderer and pose with gentle camels for sensational Dubai/Sahara style portraits.",
         price: "200,000 VND / Round / Person",
         badge: "Million-Dollar View",
-        image: "/images/camel-tour.jpg"
+        image: "/images/camel-real.jpg"
       },
       {
         id: "ostrich",
@@ -87,7 +87,7 @@ export const en = {
         desc: "A fun and amusing activity ideal for both families and adventurous youngsters on the sandy grounds.",
         price: "100,000 VND / Round / Person",
         badge: "Family Favorite",
-        image: "/images/ostrich.jpg"
+        image: "/images/ostrich-real.jpg"
       },
       {
         id: "sandboard",
@@ -107,24 +107,24 @@ export const en = {
     subtitle: "Every corner of White Sand Dunes offers an awe-inspiring natural canvas",
     items: [
       {
-        title: "Legendary Coastal Dune Road",
-        desc: "A picturesque coastal highway cutting through vast dunes, perfect for stylish Jeep photos.",
-        image: "/images/hero-fallback.jpg"
+        title: "Trieu Trang Entrance & Jeep Fleet",
+        desc: "Vibrant fleet of colorful safari Jeeps and heavy-duty ATVs welcoming travelers at the main gate.",
+        image: "/images/jeep-gate.jpg"
       },
       {
-        title: "White Sand Peak & Lotus Lake",
-        desc: "Known as Vietnam's little Sahara, contrasting pure white sand against serene freshwater lakes.",
-        image: "/images/spot-lake.jpg"
+        title: "White Dune Crest & Lotus Oasis",
+        desc: "Known as Vietnam's little Sahara, panoramic view of emerald lake bordered by pristine rolling dunes.",
+        image: "/images/spot-lake-real.jpg"
       },
       {
-        title: "Nomadic Dune Photo Point",
-        desc: "Iconic desert staircase and camel posing spot for unforgettable high-fashion travel memories.",
-        image: "/images/gallery-2.jpg"
+        title: "I LOVE BAU TRANG Landmark",
+        desc: "The premier photo spot featuring traditional Ao Dai, golden dunes, and affectionate camel portraits.",
+        image: "/images/spot-ibautrang.jpg"
       },
       {
-        title: "Coastline & Mui Ne Fishing Bay",
-        desc: "Crisp blue tropical waters meeting the authentic maritime culture of coastal central Vietnam.",
-        image: "/images/spot-beach.jpg"
+        title: "Conquering Sand Dunes With Fleet",
+        desc: "Witness the magnificent convoy of off-road ATVs and safari Jeeps traversing endless desert ridges.",
+        image: "/images/fleet-sand.jpg"
       }
     ]
   },

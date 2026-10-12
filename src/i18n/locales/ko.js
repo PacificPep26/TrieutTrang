@@ -57,10 +57,10 @@ export const ko = {
         id: "jeep-sunset",
         type: "jeep",
         title: "레드 샌듄 선셋 지프 투어",
-        desc: "오후 1:30 출발하여 붉게 물드는 로맨틱한 일몰과 함께 요정의 샘, 피싱 빌리지를 둘러보는 코스입니다.",
+        desc: "오후 1:30 출발하여 붉게 물드는 로맨틱한 일몰과 함께 요정의 샘, 피シング 빌리지를 둘러보는 코스입니다.",
         price: "800,000 VND / 차량 (최대 6인)",
         badge: "오후 13:30 - 18:00",
-        image: "/images/jeep.jpg"
+        image: "/images/jeep-gate.jpg"
       },
       {
         id: "atv",
@@ -69,7 +69,7 @@ export const ko = {
         desc: "모래 언덕을 가로지르는 스릴 넘치는 스피드! 직접 핸들을 잡고 짜릿한 사막 질주를 즐겨보세요.",
         price: "800,000 VND / 20분",
         badge: "스릴 만점",
-        image: "/images/atv.jpg"
+        image: "/images/atv-convoy.jpg"
       },
       {
         id: "camel",
@@ -78,7 +78,7 @@ export const ko = {
         desc: "하얀 모래언덕 위에서 온순한 낙타와 함께 두바이/사하라 사막 분위기의 독보적인 인생샷을 남겨보세요.",
         price: "200,000 VND / 1인 1바퀴",
         badge: "인기 포토존",
-        image: "/images/camel-tour.jpg"
+        image: "/images/camel-real.jpg"
       },
       {
         id: "ostrich",
@@ -87,7 +87,7 @@ export const ko = {
         desc: "온 가족이 함께 즐길 수 있는 유쾌한 이색 체험으로, 모래언덕 위를 성큼성큼 달리는 재미를 느껴보세요.",
         price: "100,000 VND / 1인 1바퀴",
         badge: "가족 추천",
-        image: "/images/ostrich.jpg"
+        image: "/images/ostrich-real.jpg"
       },
       {
         id: "sandboard",
@@ -107,24 +107,24 @@ export const ko = {
     subtitle: "화이트 샌듄의 모든 순간은 영화 속 한 장면처럼 아름답습니다",
     items: [
       {
-        title: "환상적인 해안 모래 도로",
-        desc: "탁 트인 바다와 모래언덕을 가로지르는 도로 위에서 알록달록한 지프차와 함께 촬영하는 최고의 코스입니다.",
-        image: "/images/hero-fallback.jpg"
+        title: "트리에우 짱 입구 & 지프단",
+        desc: "알록달록한 지프차와 강력한 ATV 사륜바이크 군단이 여행객을 맞이하는 랜드마크입니다.",
+        image: "/images/jeep-gate.jpg"
       },
       {
         title: "화이트 샌듄 정상 & 연꽃 호수",
         desc: "베트남의 작은 사하라 사막으로 불리며, 하얀 모래와 푸른 담수 호수가 어우러진 신비로운 풍경을 선사합니다.",
-        image: "/images/spot-lake.jpg"
+        image: "/images/spot-lake-real.jpg"
       },
       {
-        title: "사막 유목민 포토존 & 낙타",
-        desc: "이국적인 사막 계단과 온순한 낙타와 함께 남기는 인생 화보 포토스팟입니다.",
-        image: "/images/gallery-2.jpg"
+        title: "I LOVE BAU TRANG 포토존",
+        desc: "베트남 전통 아오자이, 붉은 금성홍기, 사막 낙타와 함께 남기는 시그니처 포토스팟입니다.",
+        image: "/images/spot-ibautrang.jpg"
       },
       {
-        title: "해안선 & 무이네 피싱 베이",
-        desc: "푸른 바다와 베트남 중부 해안의 낭만적인 풍경을 한눈에 감상할 수 있습니다.",
-        image: "/images/spot-beach.jpg"
+        title: "사막 능선을 정복하는 사륜 차량단",
+        desc: "끝없이 펼쳐진 화이트 샌듄 능선 위를 일렬로 질주하는 압도적인 장관을 만나보세요.",
+        image: "/images/fleet-sand.jpg"
       }
     ]
   },

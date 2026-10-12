@@ -59,25 +59,25 @@ export const vi = {
         desc: "Chinh phục cồn cát trắng, check-in cung đường ven biển và xe nước vàng cam. Tùy chọn đón Bình Minh (4:30 sáng) hoặc ngắm Hoàng Hôn (13:30 chiều).",
         price: "800.000đ / Xe (Tối đa 6 khách)",
         badge: "Bình Minh & Hoàng Hôn",
-        image: "/images/jeep.jpg"
+        image: "/images/jeep-gate.jpg"
       },
       {
         id: "atv",
         type: "adventure",
         title: "Thuê Xe Địa Hình ATV Leo Đồi",
-        desc: "Tự tay cầm lái chinh phục những con dốc cát uốn lượn ngoạn mục, cảm nhận cảm giác mạnh và tự do tuyệt đối.",
+        desc: "Tự tay cầm lái đoàn xe ATV 400cc chinh phục những con dốc cát uốn lượn ngoạn mục, cảm nhận cảm giác mạnh và tự do tuyệt đối.",
         price: "800.000đ / 20 Phút",
         badge: "Cảm giác mạnh",
-        image: "/images/atv.jpg"
+        image: "/images/atv-convoy.jpg"
       },
       {
         id: "camel",
         type: "adventure",
         title: "Cưỡi Lạc Đà Sa Mạc Check-in",
-        desc: "Hóa thân thành những người du mục giữa đồi cát bao la, chụp những bức hình độc bản phong cách Dubai/Sahara.",
+        desc: "Hóa thân thành nàng thơ du mục giữa đồi cát bao la, chụp những bức hình độc bản phong cách Dubai/Sahara cùng lạc đà.",
         price: "200.000đ / Vòng / Người",
         badge: "Góc ảnh triệu view",
-        image: "/images/camel-tour.jpg"
+        image: "/images/camel-real.jpg"
       },
       {
         id: "ostrich",
@@ -86,7 +86,7 @@ export const vi = {
         desc: "Hoạt động vui nhộn thích hợp cho cả gia đình và trẻ nhỏ, cảm giác ngồi trên lưng đà điểu sải bước cực kỳ phấn khích.",
         price: "100.000đ / Vòng / Người",
         badge: "Gia đình yêu thích",
-        image: "/images/ostrich.jpg"
+        image: "/images/ostrich-real.jpg"
       },
       {
         id: "sandboard",
@@ -106,24 +106,24 @@ export const vi = {
     subtitle: "Mỗi bước chân tại Bàu Trắng đều là một bức tranh thiên nhiên tuyệt mỹ",
     items: [
       {
-        title: "Cung Đường Cát Trắng Huyền Thoại",
-        desc: "Cung đường ven biển và cồn cát rộng mở thênh thang, góc chụp xe Jeep cực ngầu không thể bỏ lỡ.",
-        image: "/images/hero-fallback.jpg"
+        title: "Cổng Chào & Đội Xe Triều Trang",
+        desc: "Dàn xe Jeep sắc màu rực rỡ và mô tô địa hình ATV hùng hậu đón chào du khách tại cổng khu du lịch.",
+        image: "/images/jeep-gate.jpg"
       },
       {
-        title: "Đỉnh Đồi Cát Trắng & Hồ Sen",
-        desc: "Được mệnh danh là tiểu sa mạc Sahara của Việt Nam, nơi giao thoa giữa cát trắng mịn và hồ nước trong xanh.",
-        image: "/images/spot-lake.jpg"
+        title: "Đỉnh Đồi Cát Trắng & Hồ Sen Bàu Bà",
+        desc: "Toàn cảnh hồ nước ốc đảo xanh ngắt bao bọc bởi triền cát trắng tinh khôi nhìn từ trên cao.",
+        image: "/images/spot-lake-real.jpg"
       },
       {
-        title: "Check-in Du Mục Đồi Cát",
-        desc: "Góc check-in bậc thang sa mạc cùng lạc đà triệu view, phong cách thời trang du mục độc bản.",
-        image: "/images/gallery-2.jpg"
+        title: "Check-in Biểu Tượng I LOVE BAU TRANG",
+        desc: "Điểm check-in nổi tiếng nhất đồi cát cùng tà áo dài, cờ đỏ sao vàng và chú lạc đà thân thiện.",
+        image: "/images/spot-ibautrang.jpg"
       },
       {
-        title: "Cung Đường Biển & Làng Chài Mũi Né",
-        desc: "Bãi biển xanh mát kết hợp vẻ đẹp thơ mộng của thiên nhiên duyên hải miền Trung.",
-        image: "/images/spot-beach.jpg"
+        title: "Chinh Phục Đỉnh Đồi Cát Cùng Đội Xe",
+        desc: "Trải nghiệm phi xe địa hình xếp hàng thẳng tắp tung hoành trên sa mạc cát mênh mông.",
+        image: "/images/fleet-sand.jpg"
       }
     ]
   },

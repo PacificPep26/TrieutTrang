@@ -76,7 +76,7 @@ export const zh = {
         type: "adventure",
         title: "沙漠骆驼拍照与骑行",
         desc: "化身沙漠旅人漫步无垠沙丘，与温顺骆驼合影，随手定格迪拜/撒哈拉异域风情大片。",
-        price: "200,000 越南盾 / 次",
+        price: "200,000 越南盾 / 圈 / 人",
         badge: "网美打卡",
         image: "/images/camel.jpg"
       },
@@ -85,12 +85,21 @@ export const zh = {
         type: "adventure",
         title: "欢乐骑鸵鸟趣味体验",
         desc: "适合亲子家庭与年轻情侣的趣味项目，感受骑在鸵鸟背上奔跑的欢笑与独特乐趣。",
-        price: "100,000 越南盾 / 次",
+        price: "100,000 越南盾 / 圈 / 人",
         badge: "亲子最爱",
         image: "/images/ostrich.jpg"
+      },
+      {
+        id: "sandboard",
+        type: "adventure",
+        title: "白沙丘滑沙趣味挑战",
+        desc: "手持专用滑沙板从陡峭沙丘飞驰而下，体验风驰电掣的快感，拍摄超吸睛动感大片。",
+        price: "50,000 越南盾 / 板 / 人",
+        badge: "出片超美",
+        image: "/images/sandboard.jpg"
       }
     ],
-    bookBtn: "预订行程 / 微信·WhatsApp咨询"
+    bookBtn: "预订体验 / 微信·WhatsApp咨询"
   },
   spots: {
     tag: "MUST-VISIT DESTINATIONS",

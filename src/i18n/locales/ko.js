@@ -76,7 +76,7 @@ export const ko = {
         type: "adventure",
         title: "사막 낙타 체험 & 포토존",
         desc: "하얀 모래언덕 위에서 온순한 낙타와 함께 두바이/사하라 사막 분위기의 독보적인 인생샷을 남겨보세요.",
-        price: "200,000 VND / 1회",
+        price: "200,000 VND / 1인 1바퀴",
         badge: "인기 포토존",
         image: "/images/camel.jpg"
       },
@@ -85,12 +85,21 @@ export const ko = {
         type: "adventure",
         title: "타조 타기 이색 체험",
         desc: "온 가족이 함께 즐길 수 있는 유쾌한 이색 체험으로, 모래언덕 위를 성큼성큼 달리는 재미를 느껴보세요.",
-        price: "100,000 VND / 1회",
+        price: "100,000 VND / 1인 1바퀴",
         badge: "가족 추천",
         image: "/images/ostrich.jpg"
+      },
+      {
+        id: "sandboard",
+        type: "adventure",
+        title: "바우짱 사막 샌드보딩 (모래 썰매)",
+        desc: "가파른 모래 언덕을 타고 쏜살같이 미끄러져 내려오는 스릴 만점 모래썰매 체험!",
+        price: "50,000 VND / 1인 보드",
+        badge: "인생샷 & 짜릿함",
+        image: "/images/sandboard.jpg"
       }
     ],
-    bookBtn: "투어 예약 / 카카오톡·왓츠앱 문의"
+    bookBtn: "체험 예약 / 카카오톡·왓츠앱 문의"
   },
   spots: {
     tag: "MUST-VISIT DESTINATIONS",

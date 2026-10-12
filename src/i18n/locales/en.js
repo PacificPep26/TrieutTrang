@@ -76,7 +76,7 @@ export const en = {
         type: "adventure",
         title: "Desert Camel Riding Photo-Op",
         desc: "Dress up like a true desert wanderer and pose with gentle camels for sensational Dubai/Sahara style portraits.",
-        price: "200k / Turn",
+        price: "200,000 VND / Round / Person",
         badge: "Million-Dollar View",
         image: "/images/camel.jpg"
       },
@@ -85,12 +85,21 @@ export const en = {
         type: "adventure",
         title: "Fun Ostrich Ride Experience",
         desc: "A fun and amusing activity ideal for both families and adventurous youngsters on the sandy grounds.",
-        price: "100k / Turn",
+        price: "100,000 VND / Round / Person",
         badge: "Family Favorite",
         image: "/images/ostrich.jpg"
+      },
+      {
+        id: "sandboard",
+        type: "adventure",
+        title: "Dune Sandboarding Thrill",
+        desc: "Glide down the steep white dunes on a custom sandboard, exhilarating rush and stunning desert photo moments.",
+        price: "50,000 VND / Board / Person",
+        badge: "Pure Fun & Photo",
+        image: "/images/sandboard.jpg"
       }
     ],
-    bookBtn: "Book Tour / WhatsApp Inquiry"
+    bookBtn: "Book Service / WhatsApp Inquiry"
   },
   spots: {
     tag: "MUST-VISIT DESTINATIONS",

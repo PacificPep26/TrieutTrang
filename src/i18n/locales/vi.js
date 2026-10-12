@@ -75,7 +75,7 @@ export const vi = {
         type: "adventure",
         title: "Cưỡi Lạc Đà Sa Mạc Check-in",
         desc: "Hóa thân thành những người du mục giữa đồi cát bao la, chụp những bức hình độc bản phong cách Dubai/Sahara.",
-        price: "200k / Lượt",
+        price: "200.000đ / Vòng / Người",
         badge: "Góc ảnh triệu view",
         image: "/images/camel.jpg"
       },
@@ -84,12 +84,21 @@ export const vi = {
         type: "adventure",
         title: "Trải Nghiệm Cưỡi Đà Điểu",
         desc: "Hoạt động vui nhộn thích hợp cho cả gia đình và trẻ nhỏ, cảm giác ngồi trên lưng đà điểu sải bước cực kỳ phấn khích.",
-        price: "100k / Lượt",
+        price: "100.000đ / Vòng / Người",
         badge: "Gia đình yêu thích",
         image: "/images/ostrich.jpg"
+      },
+      {
+        id: "sandboard",
+        type: "adventure",
+        title: "Trượt Cát Sa Mạc Bàu Trắng",
+        desc: "Trượt từ đỉnh đồi cát dốc uốn lượn xuống thung lũng cát trắng mịn, trải nghiệm siêu phấn khích, check-in sống ảo cực chất.",
+        price: "50.000đ / Ván / Người",
+        badge: "Check-in cực đẹp",
+        image: "/images/sandboard.jpg"
       }
     ],
-    bookBtn: "Đặt Tour / Nhận Tư Vấn"
+    bookBtn: "Đặt Dịch Vụ / Nhận Tư Vấn"
   },
   spots: {
     tag: "MUST-VISIT DESTINATIONS",

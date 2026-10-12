@@ -1,0 +1,115 @@
+{
+  "menuData": {
+    "menu-dac-san": [
+      {
+        "name": "Dông cát",
+        "price": "1.000.000đ/kg",
+        "desc": "Dông nướng muối ớt, xào lăn xúc bánh tráng, nướng mọi.",
+        "image": "/images/dong-cat.jpg"
+      },
+      {
+        "name": "Gà đồi cát",
+        "price": "300.000đ/kg",
+        "desc": "Gà ta thả đồi xé phay trộn gỏi, nướng than hoa, nấu cháo.",
+        "image": "/images/ga-doi-cat.jpg"
+      }
+    ],
+    "menu-mon-an": [
+      {
+        "name": "Cá lóc chiên xù",
+        "price": "300.000đ/kg",
+        "desc": "Cá lóc giòn rụm cuốn bánh tráng rau sống, mỡ hành đậu phộng.",
+        "image": "/images/ca-loc.jpg"
+      },
+      {
+        "name": "Lẩu gà lá giang / Hải sản",
+        "price": "250.000đ/Lẩu",
+        "desc": "Nước dùng chua thanh đậm đà ăn kèm bún tươi và rau.",
+        "image": "/images/lau-ga-hai-san.jpg"
+      },
+      {
+        "name": "Cơm chiên hải sản",
+        "price": "Đĩa lớn",
+        "desc": "Cơm rang hạt tơi giòn xào cùng tôm mực tươi ngon.",
+        "image": "/images/com-chien.jpg"
+      },
+      {
+        "name": "Mì xào mực / bò",
+        "price": "50.000đ/phần",
+        "desc": "Mì xào giòn dai đậm đà, thịt bò mềm và mực tươi ngọt.",
+        "image": "/images/mi-xao.jpg"
+      },
+      {
+        "name": "Rau muống xào tỏi",
+        "price": "30.000đ/đĩa",
+        "desc": "Rau xanh mướt giòn sần sật phi tỏi thơm lừng.",
+        "image": "/images/rau-xao.jpg"
+      },
+      {
+        "name": "Khoai tây chiên",
+        "price": "50.000đ/đĩa",
+        "desc": "Khoai tây giòn rụm, vàng ươm chấm kèm tương ớt.",
+        "image": "/images/khoai-tay.jpg"
+      }
+    ],
+    "menu-giai-khat": [
+      {
+        "name": "Nước dừa tươi quả",
+        "price": "30.000đ",
+        "desc": "Dừa xiêm ngọt mát thanh sau những giờ vui đùa đồi cát."
+      },
+      {
+        "name": "Đá chanh / Chanh nóng",
+        "price": "20.000đ",
+        "desc": "Chanh tươi mát lạnh sảng khoái đánh tan nắng gắt sa mạc.",
+        "image": "/images/nuoc-chanh.jpg"
+      },
+      {
+        "name": "Sinh tố dưa hấu / xoài",
+        "price": "30.000đ",
+        "desc": "Trái cây nhiệt đới tươi ngon xay nhuyễn thanh mát."
+      },
+      {
+        "name": "Cà phê đá / sữa đá",
+        "price": "25.000đ",
+        "desc": "Cà phê nguyên chất đậm đà sảng khoái ngày hè."
+      }
+    ]
+  },
+  "tabs": [
+    {
+      "id": "menu-dac-san",
+      "label": "Món Đặc Sản"
+    },
+    {
+      "id": "menu-mon-an",
+      "label": "Món Ăn & Lẩu"
+    },
+    {
+      "id": "menu-giai-khat",
+      "label": "Nước Giải Khát"
+    }
+  ],
+  "fullMenuPages": [
+    {
+      "page": 1,
+      "title": "Cơm, Mì & Phở",
+      "img": "/images/menu-page-1.jpg"
+    },
+    {
+      "page": 2,
+      "title": "Lẩu & Các Món Rau",
+      "img": "/images/menu-page-2.jpg"
+    },
+    {
+      "page": 3,
+      "title": "Cá Lóc, Dông Cát & Gà",
+      "img": "/images/menu-page-3.jpg"
+    },
+    {
+      "page": 4,
+      "title": "Nước Uống & Set Cơm Phần",
+      "img": "/images/menu-page-4.jpg"
+    }
+  ]
+}

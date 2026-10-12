@@ -1,39 +1,17 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from '../../i18n/LanguageContext';
+import menuConfig from '../../data/menuData.json';
 import './RestaurantMenu.scss';
 
 export default function RestaurantMenu() {
   const [activeTab, setActiveTab] = useState('menu-dac-san');
+  const [selectedMenuPage, setSelectedMenuPage] = useState(null);
   const { dictionary } = useTranslation();
   const diningData = dictionary.dining;
 
-  const menuData = {
-    'menu-dac-san': [
-      { name: 'Dông cát', price: '1.000.000đ/kg', desc: 'Nướng muối ớt, xào lăn xúc bánh tráng, nướng mọi.', image: '/images/dong-cat.jpg' },
-      { name: 'Gà đồi cát', price: '300.000đ/kg', desc: 'Gà thả đồi chắc thịt, thơm ngon.', image: '/images/ga-doi-cat.jpg' }
-    ],
-    'menu-hai-san': [
-      { name: 'Mực một nắng nướng sa tế', price: '180.000đ', desc: 'Mực ống tươi roi rói được phơi qua một nắng giòn ngọt, nướng muối ớt sa tế cay tê nách.' },
-      { name: 'Tôm hùm Bình Thuận hấp nước dừa', price: 'Theo mùa', desc: 'Tôm hùm biển ngọt thịt được hấp cùng nước dừa xiêm béo ngậy, ngọt lịm tim.' },
-      { name: 'Sò điệp nướng mỡ hành', price: '90.000đ', desc: 'Sò điệp béo múp nướng xèo xèo cùng mỡ hành, đậu phộng rang giòn bùi thơm nức.' },
-      { name: 'Ghẹ hấp bia sả', price: '320.000đ/kg', desc: 'Ghẹ xanh đánh bắt trong ngày hấp bia thơm nồng sả ớt, chấm muối tiêu chanh chuẩn vị.' }
-    ],
-    'menu-giai-khat': [
-      { name: 'Nước dừa tươi xiêm quả', price: '30.000đ', desc: 'Dừa xiêm ngọt thanh mát lạnh, thức uống lý tưởng sau những giờ đùa giỡn đồi cát nắng ấm.' },
-      { name: 'Sinh tố thanh long đỏ', price: '40.000đ', desc: 'Được xay nhuyễn từ loại trái cây đặc sản nổi tiếng nhất Bình Thuận, giàu vitamin.' },
-      { name: 'Nước ép chanh dây mát lạnh', price: '35.000đ', desc: 'Hương thơm nồng nàn chua chua ngọt ngọt đánh tan cơn khát tức thời.' },
-      { name: 'Cà phê sữa đá Sài Gòn', price: '25.000đ', desc: 'Cà phê phin đậm đặc pha sữa đặc thơm béo ngậy kèm đá bào sảng khoái ngày hè.' }
-    ]
-  };
+  const { menuData, tabs, fullMenuPages } = menuConfig;
 
-  const tabs = [
-    { id: 'menu-dac-san', label: 'Món Đặc Sản' },
-    { id: 'menu-hai-san', label: 'Hải Sản Tươi Sống' },
-    { id: 'menu-giai-khat', label: 'Nước Giải Khát' }
-  ];
-
-  // Framer Motion variants
   const headerVariants = {
     hidden: { opacity: 0, y: 30 },
     visible: { 
@@ -47,12 +25,12 @@ export default function RestaurantMenu() {
     hidden: { opacity: 0, y: 15 },
     visible: { 
       opacity: 1, 
-      y: 0,
+      y: 0, 
       transition: { duration: 0.35, ease: 'easeOut' }
     },
     exit: { 
       opacity: 0, 
-      y: -15,
+      y: -15, 
       transition: { duration: 0.2, ease: 'easeIn' }
     }
   };
@@ -105,14 +83,22 @@ export default function RestaurantMenu() {
               exit="exit"
             >
               <div className="menu-grid">
-                {menuData[activeTab].map((item, idx) => (
+                {menuData[activeTab]?.map((item, idx) => (
                   <motion.div 
                     key={idx} 
                     className="menu-item"
                     whileHover={{ x: 6 }}
                     transition={{ type: 'spring', stiffness: 200, damping: 15 }}
                   >
-                    {item.image && <img className="menu-item-img" src={item.image} alt={item.name} loading="lazy" onError={(e) => { e.currentTarget.style.display = 'none'; }} />}
+                    {item.image && (
+                      <img 
+                        className="menu-item-img" 
+                        src={item.image} 
+                        alt={item.name} 
+                        loading="lazy" 
+                        onError={(e) => { e.currentTarget.style.display = 'none'; }} 
+                      />
+                    )}
                     <div className="menu-item-details">
                       <h4 className="menu-item-title">
                         {item.name} <span>{item.price}</span>
@@ -125,7 +111,58 @@ export default function RestaurantMenu() {
             </motion.div>
           </AnimatePresence>
         </div>
+
+        {/* View Full Menu Banner */}
+        <div className="menu-full-cta">
+          <div className="menu-full-cta-card">
+            <div className="menu-full-cta-text">
+              <h3>Xem Trọn Bộ Thực Đơn Triều Trang</h3>
+              <p>Xem thực đơn chi tiết gồm các món cơm, mì, lẩu, đồ uống và set cơm đoàn phục vụ tại quán.</p>
+            </div>
+            <div className="menu-pages-preview">
+              {fullMenuPages.map((p) => (
+                <div 
+                  key={p.page} 
+                  className="menu-page-thumb" 
+                  onClick={() => setSelectedMenuPage(p.img)}
+                  title={`Bấm xem trang ${p.page}: ${p.title}`}
+                >
+                  <img src={p.img} alt={p.title} loading="lazy" />
+                  <span>Trang {p.page}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
+
+      {/* Lightbox Modal for Menu Pages */}
+      <AnimatePresence>
+        {selectedMenuPage && (
+          <motion.div 
+            className="menu-lightbox"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setSelectedMenuPage(null)}
+          >
+            <span className="menu-lightbox-close material-icons">close</span>
+            <motion.div 
+              className="menu-lightbox-dialog"
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <img 
+                src={selectedMenuPage} 
+                alt="Thực đơn chi tiết Triều Trang" 
+                className="menu-lightbox-img" 
+              />
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 }

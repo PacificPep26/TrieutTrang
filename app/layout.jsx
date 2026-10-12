@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'Bàu Cát Trắng | KDL Xe Địa Hình & Trải Nghiệm Mũi Né Cao Cấp',
-  icons: '/favicon.svg',
+  icons: { icon: '/icon.png', apple: '/apple-icon.png' },
 };
 
 export default function RootLayout({ children }) {

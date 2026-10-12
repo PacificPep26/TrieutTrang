@@ -14,7 +14,7 @@ export default function FloatingContact() {
     <div className="floating-contacts">
       {/* Floating Zalo */}
       <motion.a 
-        href="https://zalo.me/0901234567" 
+        href="https://zalo.me/0979391234" 
         target="_blank" 
         rel="noopener noreferrer" 
         className="floating-btn btn-zalo"
@@ -37,7 +37,7 @@ export default function FloatingContact() {
 
       {/* Floating Phone */}
       <motion.a 
-        href="tel:0901234567" 
+        href="tel:0979391234" 
         className="floating-btn btn-phone"
         aria-label="Gọi hotline"
         animate={{ y: [0, -8, 0] }}

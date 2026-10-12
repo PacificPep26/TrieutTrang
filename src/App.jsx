@@ -55,10 +55,10 @@ function MainContent() {
           <h2 className="cta-title">{ctaData.title}</h2>
           <p className="cta-desc">{ctaData.desc}</p>
           <div className="cta-buttons">
-            <a href="tel:0901234567" className="btn btn-primary btn-lg">
+            <a href="tel:0979391234" className="btn btn-primary btn-lg">
               <span className="material-icons">call</span> {ctaData.callNow}
             </a>
-            <a href="https://zalo.me/0901234567" target="_blank" rel="noopener noreferrer" className="btn btn-outline-light btn-lg">
+            <a href="https://zalo.me/0979391234" target="_blank" rel="noopener noreferrer" className="btn btn-outline-light btn-lg">
               <span className="material-icons">chat</span> {ctaData.chatZalo}
             </a>
           </div>

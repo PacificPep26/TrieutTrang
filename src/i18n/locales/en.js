@@ -58,7 +58,7 @@ export const en = {
         type: "jeep",
         title: "Sunset Jeep Tour Red Dunes",
         desc: "Depart at 1:30 PM to admire romantic golden dunes at dusk, visiting Fairy Stream and traditional Fishing Village.",
-        price: "600k / Private Jeep",
+        price: "800,000 VND / Car (Up to 6 guests)",
         badge: "01:30 - 06:00 PM",
         image: "/images/jeep.jpg"
       },
@@ -186,14 +186,14 @@ export const en = {
   cta: {
     title: "Ready for an Unforgettable Desert Adventure?",
     desc: "Contact us today for custom itinerary advice and secure the best departure slots!",
-    callNow: "Call Hotline: 0901 234 567",
+    callNow: "Call Hotline: 0979 391 234",
     chatZalo: "Instant Chat Consultation"
   },
   footer: {
     desc: "Premier White Sand Dunes tourism destination & trusted Jeep / ATV tour operator in Mui Ne, Phan Thiet.",
     quickLinks: "Quick Links",
     contactInfo: "Contact Details",
-    address: "Hoa Thang, Bac Binh, Binh Thuan (25km from Mui Ne Center)",
+    address: "Bau Trang, Hong Lam Village, Hoa Thang Commune, Lam Dong Province",
     rights: "Copyright © White Sand Dunes. All rights reserved."
   }
 };

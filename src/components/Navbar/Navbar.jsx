@@ -47,7 +47,7 @@ export default function Navbar() {
               <span className="material-icons">menu</span>
             </button>
             <span className="header-phone">
-              <span className="material-icons">phone</span> 0901 234 567
+              <span className="material-icons">phone</span> 0979 391 234
             </span>
           </div>
 
@@ -130,8 +130,8 @@ export default function Navbar() {
           <li><a href="#danh-gia" className="drawer-link" onClick={closeDrawer}>{navText.reviews}</a></li>
           <li><a href="#faq" className="drawer-link" onClick={closeDrawer}>{navText.faq}</a></li>
           <li>
-            <a href="tel:0901234567" className="drawer-link contact-drawer" onClick={closeDrawer}>
-              <span className="material-icons">phone</span> {navText.callUs}: 0901 234 567
+            <a href="tel:0979391234" className="drawer-link contact-drawer" onClick={closeDrawer}>
+              <span className="material-icons">phone</span> {navText.callUs}: 0979 391 234
             </a>
           </li>
         </ul>

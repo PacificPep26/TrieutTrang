@@ -57,7 +57,7 @@ export const vi = {
         type: "jeep",
         title: "Tour Xe Jeep Khám Phá Đồi Cát Bàu Trắng",
         desc: "Chinh phục cồn cát trắng, check-in cung đường ven biển và xe nước vàng cam. Tùy chọn đón Bình Minh (4:30 sáng) hoặc ngắm Hoàng Hôn (13:30 chiều).",
-        price: "600k / Xe riêng (Tối đa 6 khách)",
+        price: "800.000đ / Xe (Tối đa 6 khách)",
         badge: "Bình Minh & Hoàng Hôn",
         image: "/images/jeep.jpg"
       },
@@ -185,14 +185,14 @@ export const vi = {
   cta: {
     title: "Sẵn Sàng Cho Chuyến Phiêu Lưu Tại Bàu Cát Trắng?",
     desc: "Liên hệ ngay hôm nay để nhận tư vấn lộ trình chi tiết và giữ chỗ cho khung giờ đẹp nhất!",
-    callNow: "Gọi Ngay: 0901 234 567",
+    callNow: "Gọi Ngay: 0979 391 234",
     chatZalo: "Tư Vấn Zalo Miễn Phí"
   },
   footer: {
     desc: "Khu du lịch & Dịch vụ Tour xe Jeep, ATV Đồi Cát Trắng Mũi Né uy tín hàng đầu Phan Thiết.",
     quickLinks: "Liên Kết Nhanh",
     contactInfo: "Thông Tin Liên Hệ",
-    address: "Hòa Thắng, Bắc Bình, Bình Thuận (Cách trung tâm Mũi Né 25km)",
+    address: "Bàu Trắng, thôn Hồng Lâm, xã Hòa Thắng, tỉnh Lâm Đồng",
     rights: "Bản quyền thuộc về Bàu Cát Trắng. Đã đăng ký bản quyền."
   }
 };

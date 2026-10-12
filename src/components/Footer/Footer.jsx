@@ -44,7 +44,7 @@ export default function Footer() {
               </li>
               <li>
                 <span className="material-icons">phone</span>
-                Hotline: <a href="tel:0901234567">0901 234 567</a>
+                Hotline: <a href="tel:0979391234">0979 391 234</a>
               </li>
               <li>
                 <span className="material-icons">email</span>

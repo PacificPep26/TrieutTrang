@@ -58,7 +58,7 @@ export const ko = {
         type: "jeep",
         title: "레드 샌듄 선셋 지프 투어",
         desc: "오후 1:30 출발하여 붉게 물드는 로맨틱한 일몰과 함께 요정의 샘, 피싱 빌리지를 둘러보는 코스입니다.",
-        price: "600,000 VND / 단독 지프",
+        price: "800,000 VND / 차량 (최대 6인)",
         badge: "오후 13:30 - 18:00",
         image: "/images/jeep.jpg"
       },
@@ -186,14 +186,14 @@ export const ko = {
   cta: {
     title: "화이트 샌듄으로 떠날 준비가 되셨나요?",
     desc: "지금 바로 문의하고 최고의 시간대에 단독 지프 투어를 예약해보세요!",
-    callNow: "핫라인: 0901 234 567",
+    callNow: "핫라인: 0979 391 234",
     chatZalo: "메신저 실시간 상담"
   },
   footer: {
     desc: "무이네 화이트 샌듄 최고의 지프 & ATV 전문 투어 서비스.",
     quickLinks: "바로가기",
     contactInfo: "연락처 및 위치",
-    address: "베트남 빈투언성 박빈현 호아탕 (무이네 중심에서 25km)",
+    address: "베트남 럼동성 호아탕사 홍럼마을 바우짱",
     rights: "Copyright © White Sand Dunes. All rights reserved."
   }
 };

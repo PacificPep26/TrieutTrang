@@ -58,7 +58,7 @@ export const zh = {
         type: "jeep",
         title: "红沙丘日落浪漫吉普车游",
         desc: "下午1:30启程，沐浴在夕阳余晖下，漫步仙女溪并探访传统渔村人文风貌。",
-        price: "600,000 越南盾 / 专享包车",
+        price: "800,000 越南盾 / 车（最多6人）",
         badge: "午后 13:30 - 18:00",
         image: "/images/jeep.jpg"
       },
@@ -186,14 +186,14 @@ export const zh = {
   cta: {
     title: "准备好开启您的美奈沙丘探险了吗？",
     desc: "立即与我们取得联系，获取专属行程规划并锁定最佳出发时间！",
-    callNow: "热线直拨: 0901 234 567",
+    callNow: "热线直拨: 0979 391 234",
     chatZalo: "在线实时咨询 (微信/WhatsApp)"
   },
   footer: {
     desc: "美奈白沙丘高品质吉普车游与ATV沙滩车探险服务商。",
     quickLinks: "快速链接",
     contactInfo: "联系方式与地址",
-    address: "越南平顺省北平县和平乡（距美奈市中心25公里）",
+    address: "越南林同省和胜乡鸿林村白沙湖（Bàu Trắng）",
     rights: "版权所有 © 白沙丘探险. 保留所有权利."
   }
 };

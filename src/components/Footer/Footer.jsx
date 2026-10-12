@@ -16,7 +16,7 @@ export default function Footer() {
             <h3 className="logo shiny-text">BÀU CÁT TRẮNG</h3>
             <p className="brand-desc">{fData.desc}</p>
             <div className="social-links">
-              <a href="#" aria-label="Facebook"><span className="material-icons">facebook</span></a>
+              <a href="https://www.facebook.com/bautrangdoicatmuine" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><span className="material-icons">facebook</span></a>
               <a href="#" aria-label="Instagram"><span className="material-icons">photo_camera</span></a>
               <a href="#" aria-label="YouTube"><span className="material-icons">play_circle_filled</span></a>
             </div>

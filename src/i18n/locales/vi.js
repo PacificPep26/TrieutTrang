@@ -66,7 +66,7 @@ export const vi = {
         type: "adventure",
         title: "Thuê Xe Địa Hình ATV Leo Đồi",
         desc: "Tự tay cầm lái chinh phục những con dốc cát uốn lượn ngoạn mục, cảm nhận cảm giác mạnh và tự do tuyệt đối.",
-        price: "800k / 30 Phút",
+        price: "800.000đ / 20 Phút",
         badge: "Cảm giác mạnh",
         image: "/images/atv.jpg"
       },
@@ -108,22 +108,22 @@ export const vi = {
       {
         title: "Cung Đường Cát Trắng Huyền Thoại",
         desc: "Cung đường ven biển và cồn cát rộng mở thênh thang, góc chụp xe Jeep cực ngầu không thể bỏ lỡ.",
-        image: "/images/jeep.jpg"
+        image: "/images/hero-fallback.jpg"
       },
       {
         title: "Đỉnh Đồi Cát Trắng & Hồ Sen",
         desc: "Được mệnh danh là tiểu sa mạc Sahara của Việt Nam, nơi giao thoa giữa cát trắng mịn và hồ nước trong xanh.",
-        image: "/images/atv.jpg"
+        image: "/images/spot-lake.jpg"
       },
       {
-        title: "Xe Nước Vàng Cam Check-in",
-        desc: "Biểu tượng sống ảo nổi tiếng nhất Mũi Né với chiếc xe bus nước cam rực rỡ bên bờ cát trải dài.",
-        image: "/images/camel.jpg"
+        title: "Check-in Du Mục Đồi Cát",
+        desc: "Góc check-in bậc thang sa mạc cùng lạc đà triệu view, phong cách thời trang du mục độc bản.",
+        image: "/images/gallery-2.jpg"
       },
       {
-        title: "Suối Tiên & Làng Chài Truyền Thống",
-        desc: "Dòng suối đỏ cam kỳ vĩ như hẻm núi Grand Canyon thu nhỏ cùng nét văn hóa mộc mạc của làng chài Mũi Né.",
-        image: "/images/ostrich.jpg"
+        title: "Cung Đường Biển & Làng Chài Mũi Né",
+        desc: "Bãi biển xanh mát kết hợp vẻ đẹp thơ mộng của thiên nhiên duyên hải miền Trung.",
+        image: "/images/spot-beach.jpg"
       }
     ]
   },

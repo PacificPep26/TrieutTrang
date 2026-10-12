@@ -67,7 +67,7 @@ export const ko = {
         type: "adventure",
         title: "화이트 샌듄 ATV 사륜바이크 체험",
         desc: "모래 언덕을 가로지르는 스릴 넘치는 스피드! 직접 핸들을 잡고 짜릿한 사막 질주를 즐겨보세요.",
-        price: "800,000 VND / 30분",
+        price: "800,000 VND / 20분",
         badge: "스릴 만점",
         image: "/images/atv.jpg"
       },
@@ -109,22 +109,22 @@ export const ko = {
       {
         title: "환상적인 해안 모래 도로",
         desc: "탁 트인 바다와 모래언덕을 가로지르는 도로 위에서 알록달록한 지프차와 함께 촬영하는 최고의 코스입니다.",
-        image: "/images/jeep.jpg"
+        image: "/images/hero-fallback.jpg"
       },
       {
         title: "화이트 샌듄 정상 & 연꽃 호수",
         desc: "베트남의 작은 사하라 사막으로 불리며, 하얀 모래와 푸른 담수 호수가 어우러진 신비로운 풍경을 선사합니다.",
-        image: "/images/atv.jpg"
+        image: "/images/spot-lake.jpg"
       },
       {
-        title: "노란 커피 트럭 포토존",
-        desc: "무이네 사막 도로변의 시그니처 옐로우 트럭으로, 인스타그램 감성 사진의 성지입니다.",
-        image: "/images/camel.jpg"
+        title: "사막 유목민 포토존 & 낙타",
+        desc: "이국적인 사막 계단과 온순한 낙타와 함께 남기는 인생 화보 포토스팟입니다.",
+        image: "/images/gallery-2.jpg"
       },
       {
-        title: "요정의 샘 & 피싱 빌리지",
-        desc: "붉은 모래 협곡 속을 맨발로 걷는 요정의 샘과 무이네 어촌 마을의 전통 어선 풍경을 감상하세요.",
-        image: "/images/ostrich.jpg"
+        title: "해안선 & 무이네 피싱 베이",
+        desc: "푸른 바다와 베트남 중부 해안의 낭만적인 풍경을 한눈에 감상할 수 있습니다.",
+        image: "/images/spot-beach.jpg"
       }
     ]
   },

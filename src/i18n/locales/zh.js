@@ -67,7 +67,7 @@ export const zh = {
         type: "adventure",
         title: "白沙丘ATV越野摩托驰骋",
         desc: "亲手掌控油门征服陡峭沙峰，在连绵起伏的沙浪中释放澎湃激情与绝对自由。",
-        price: "800,000 越南盾 / 30分钟",
+        price: "800,000 越南盾 / 20分钟",
         badge: "极速刺激",
         image: "/images/atv.jpg"
       },
@@ -109,22 +109,22 @@ export const zh = {
       {
         title: "传奇沙丘沿海公路",
         desc: "一面是浩瀚碧海，一面是起伏沙原，与炫彩吉普车合影是美奈之行的灵魂标志。",
-        image: "/images/jeep.jpg"
+        image: "/images/hero-fallback.jpg"
       },
       {
         title: "白沙丘之巅与莲花湖",
         desc: "被誉为越南的小撒哈拉，洁白细沙与湛蓝湖水相互映衬，宛如沙漠绿洲奇迹。",
-        image: "/images/atv.jpg"
+        image: "/images/spot-lake.jpg"
       },
       {
-        title: "橙黄色复古移动咖啡车",
-        desc: "荒芜沙海边的一抹明亮亮色，出片率极高的文艺复古网红打卡地标。",
-        image: "/images/camel.jpg"
+        title: "沙漠游牧打卡阶梯与骆驼",
+        desc: "极具异域风情的沙漠阶梯拍照点，与温顺骆驼合影，拍摄专属高级时尚大片。",
+        image: "/images/gallery-2.jpg"
       },
       {
-        title: "仙女溪与美奈传统渔港",
-        desc: "红白相间的微型大峡谷溪流，配上午后满载而归的彩色圆篮船与海港人文。",
-        image: "/images/ostrich.jpg"
+        title: "浪漫海岸线与美奈渔港",
+        desc: "蔚蓝海景与中南沿海迷人自然风光交相辉映，感受纯粹宁静的海洋之美。",
+        image: "/images/spot-beach.jpg"
       }
     ]
   },

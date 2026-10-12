@@ -4,16 +4,14 @@ import { useTranslation } from '../../i18n/LanguageContext';
 import './RestaurantMenu.scss';
 
 export default function RestaurantMenu() {
-  const [activeTab, setActiveTab] = useState('menu-mon-chinh');
+  const [activeTab, setActiveTab] = useState('menu-dac-san');
   const { dictionary } = useTranslation();
   const diningData = dictionary.dining;
 
   const menuData = {
-    'menu-mon-chinh': [
-      { name: 'Lẩu thả Phan Thiết', price: '350.000đ', desc: 'Món ăn mang đậm nét văn hóa ẩm thực Bình Thuận với cá suốt, bắp chuối, trứng và thịt ba chỉ.' },
-      { name: 'Bánh xèo miền Trung', price: '80.000đ', desc: 'Bánh xèo giòn rụm với nhân tôm thịt tươi, ăn kèm nước chấm đậu phộng đặc trưng.' },
-      { name: 'Dông cát nướng muối ớt', price: '250.000đ', desc: 'Đặc sản đồi cát trứ danh, thịt dông thơm ngọt, dai giòn được tẩm ướp đậm đà.' },
-      { name: 'Cơm gà đồi Cát Trắng', price: '120.000đ', desc: 'Thịt gà thả đồi chắc thịt thơm ngon ăn kèm cơm chiên tỏi và nước mắm chua ngọt.' }
+    'menu-dac-san': [
+      { name: 'Dông cát', price: '1.000.000đ/kg', desc: 'Nướng muối ớt, xào lăn xúc bánh tráng, nướng mọi.', image: '/images/dong-cat.jpg' },
+      { name: 'Gà đồi cát', price: '300.000đ/kg', desc: 'Gà thả đồi chắc thịt, thơm ngon.', image: '/images/ga-doi-cat.jpg' }
     ],
     'menu-hai-san': [
       { name: 'Mực một nắng nướng sa tế', price: '180.000đ', desc: 'Mực ống tươi roi rói được phơi qua một nắng giòn ngọt, nướng muối ớt sa tế cay tê nách.' },
@@ -30,7 +28,7 @@ export default function RestaurantMenu() {
   };
 
   const tabs = [
-    { id: 'menu-mon-chinh', label: 'Món Đặc Sản' },
+    { id: 'menu-dac-san', label: 'Món Đặc Sản' },
     { id: 'menu-hai-san', label: 'Hải Sản Tươi Sống' },
     { id: 'menu-giai-khat', label: 'Nước Giải Khát' }
   ];
@@ -114,6 +112,7 @@ export default function RestaurantMenu() {
                     whileHover={{ x: 6 }}
                     transition={{ type: 'spring', stiffness: 200, damping: 15 }}
                   >
+                    {item.image && <img className="menu-item-img" src={item.image} alt={item.name} loading="lazy" onError={(e) => { e.currentTarget.style.display = 'none'; }} />}
                     <div className="menu-item-details">
                       <h4 className="menu-item-title">
                         {item.name} <span>{item.price}</span>

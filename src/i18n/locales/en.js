@@ -67,7 +67,7 @@ export const en = {
         type: "adventure",
         title: "ATV Quad Bike Dunes Ride",
         desc: "Take the wheel to conquer steep sandy slopes and feel the absolute rush of adrenaline on the dunes.",
-        price: "800k / 30 Mins",
+        price: "800,000 VND / 20 Mins",
         badge: "High Adrenaline",
         image: "/images/atv.jpg"
       },
@@ -109,22 +109,22 @@ export const en = {
       {
         title: "Legendary Coastal Dune Road",
         desc: "A picturesque coastal highway cutting through vast dunes, perfect for stylish Jeep photos.",
-        image: "/images/jeep.jpg"
+        image: "/images/hero-fallback.jpg"
       },
       {
         title: "White Sand Peak & Lotus Lake",
         desc: "Known as Vietnam's little Sahara, contrasting pure white sand against serene freshwater lakes.",
-        image: "/images/atv.jpg"
+        image: "/images/spot-lake.jpg"
       },
       {
-        title: "Iconic Yellow-Orange Food Truck",
-        desc: "The famous retro roadside beverage truck nestled gracefully against endless golden slopes.",
-        image: "/images/camel.jpg"
+        title: "Nomadic Dune Photo Point",
+        desc: "Iconic desert staircase and camel posing spot for unforgettable high-fashion travel memories.",
+        image: "/images/gallery-2.jpg"
       },
       {
-        title: "Fairy Stream & Fishing Village",
-        desc: "A surreal canyon stream sculpted by red clay alongside the vibrant local harbor culture.",
-        image: "/images/ostrich.jpg"
+        title: "Coastline & Mui Ne Fishing Bay",
+        desc: "Crisp blue tropical waters meeting the authentic maritime culture of coastal central Vietnam.",
+        image: "/images/spot-beach.jpg"
       }
     ]
   },

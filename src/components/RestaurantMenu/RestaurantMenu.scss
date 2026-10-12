@@ -1,4 +1,4 @@
-﻿@use '../../styles/variables' as *;
+@use '../../styles/variables' as *;
 
 .restaurant-section {
   padding: 4.5rem 0;
@@ -31,12 +31,12 @@
 }
 
 .menu-tab-item {
-  font-family: -title;
+  font-family: $font-title;
   font-size: 0.85rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: -gray;
+  color: $color-gray;
   cursor: pointer;
   position: relative;
   padding: 0.4rem 0.6rem;
@@ -48,11 +48,11 @@
   }
 
   &:hover {
-    color: -gold;
+    color: $color-gold;
   }
 
   &.active {
-    color: -dark;
+    color: $color-dark;
   }
 
   .active-tab-underline {
@@ -61,7 +61,7 @@
     left: 0;
     right: 0;
     height: 3px;
-    background-color: -gold;
+    background-color: $color-gold;
     border-radius: 2px;
   }
 }
@@ -98,17 +98,17 @@
 
   &:hover {
     background: #ffffff;
-    border-color: -gold;
+    border-color: $color-gold;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
     transform: translateY(-2px);
   }
 }
 
 .menu-item-title {
-  font-family: -title;
+  font-family: $font-title;
   font-size: 1.08rem;
   font-weight: 700;
-  color: -dark;
+  color: $color-dark;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -125,10 +125,10 @@
   }
 
   span {
-    font-family: -title;
+    font-family: $font-title;
     font-size: 0.92rem;
     font-weight: 700;
-    color: -gold-hover;
+    color: $color-gold-hover;
     margin-left: 0.8rem;
     white-space: nowrap;
   }
@@ -136,7 +136,7 @@
 
 .menu-item-desc {
   font-size: 0.85rem;
-  color: -gray;
+  color: $color-gray;
   line-height: 1.45;
   margin: 0;
 
@@ -189,7 +189,7 @@
   margin-bottom: 1.5rem;
 
   h3 {
-    font-family: -title;
+    font-family: $font-title;
     font-size: 1.35rem;
     font-weight: 700;
     color: #e5b964;

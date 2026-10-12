@@ -78,7 +78,7 @@ export const zh = {
         desc: "化身沙漠旅人漫步无垠沙丘，与温顺骆驼合影，随手定格迪拜/撒哈拉异域风情大片。",
         price: "200,000 越南盾 / 圈 / 人",
         badge: "网美打卡",
-        image: "/images/camel.jpg"
+        image: "/images/camel-tour.jpg"
       },
       {
         id: "ostrich",

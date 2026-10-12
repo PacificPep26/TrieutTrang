@@ -78,7 +78,7 @@ export const ko = {
         desc: "하얀 모래언덕 위에서 온순한 낙타와 함께 두바이/사하라 사막 분위기의 독보적인 인생샷을 남겨보세요.",
         price: "200,000 VND / 1인 1바퀴",
         badge: "인기 포토존",
-        image: "/images/camel.jpg"
+        image: "/images/camel-tour.jpg"
       },
       {
         id: "ostrich",

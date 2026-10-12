@@ -77,7 +77,7 @@ export const vi = {
         desc: "Hóa thân thành những người du mục giữa đồi cát bao la, chụp những bức hình độc bản phong cách Dubai/Sahara.",
         price: "200.000đ / Vòng / Người",
         badge: "Góc ảnh triệu view",
-        image: "/images/camel.jpg"
+        image: "/images/camel-tour.jpg"
       },
       {
         id: "ostrich",

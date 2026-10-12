@@ -78,7 +78,7 @@ export const en = {
         desc: "Dress up like a true desert wanderer and pose with gentle camels for sensational Dubai/Sahara style portraits.",
         price: "200,000 VND / Round / Person",
         badge: "Million-Dollar View",
-        image: "/images/camel.jpg"
+        image: "/images/camel-tour.jpg"
       },
       {
         id: "ostrich",

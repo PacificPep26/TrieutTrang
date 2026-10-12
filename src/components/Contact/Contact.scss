@@ -5,33 +5,28 @@
   width: 100%;
   scroll-margin-top: 7rem; // scroll-mt-28 = 28 * 4px = 112px
   scroll-snap-align: start;
-  flex-direction: column;
+  // always 2 columns: info | map
+  flex-direction: row;
+  align-items: stretch;
   background-color: #000;
-  
-  // 2 columns (info | map) from tablet up
+
   @media (min-width: 768px) {
     min-height: min(80dvh, 48rem);
-    flex-direction: row;
-    align-items: stretch;
   }
 
   /* Left Info Block */
   .info-block {
     display: flex;
-    width: 100%;
+    width: 50%;
     flex-shrink: 0;
     flex-direction: column;
     justify-content: center;
     background-color: $color-dark;
-    padding: 2rem; // p-8
+    padding: 1.25rem 1rem;
     color: #fff;
 
     @media (min-width: 640px) {
       padding: 2.5rem; // sm:p-10
-    }
-
-    @media (min-width: 768px) {
-      width: 50%;
     }
 
     @media (min-width: 992px) {
@@ -52,7 +47,11 @@
 
   /* Title and subtext styling */
   .contact-title {
-    font-size: 1.875rem; // text-3xl
+    font-size: 1.3rem;
+
+    @media (min-width: 480px) {
+      font-size: 1.875rem; // text-3xl
+    }
     font-weight: 900; // font-black
     text-transform: uppercase;
     letter-spacing: -0.05em; // tracking-tighter
@@ -131,7 +130,11 @@
   /* Amenities */
   .amenities-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); // grid-cols-2
+    grid-template-columns: 1fr; // half-width column on phones is too narrow for 2
+
+    @media (min-width: 992px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
     row-gap: 1rem; // gap-y-4
   }
 
@@ -170,7 +173,7 @@
     min-height: min(44dvh, 22rem);
 
     @media (max-width: 767.98px) {
-      height: min(48dvh, 26rem);
+      min-height: 26rem; // stretches to the info column height
     }
 
     @media (min-width: 768px) {

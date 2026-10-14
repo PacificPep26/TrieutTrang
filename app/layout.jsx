@@ -1,3 +1,5 @@
+import '../src/styles/global.scss';
+
 const SITE = 'https://dulichtrieutrang.com';
 const DESC = 'Du Lịch Triều Trang – Tour xe Jeep, thuê ATV, cưỡi lạc đà, đà điểu, trượt cát tại Bàu Trắng (Hòa Thắng, Lâm Đồng). Hotline 0979 391 234.';
 

@@ -52,7 +52,7 @@ export default function Navbar() {
           </div>
 
           <div className="header-center">
-            <a href="#" className="logo shiny-text">BÀU CÁT TRẮNG</a>
+            <a href="/" className="logo shiny-text">BÀU CÁT TRẮNG</a>
           </div>
 
           <div className="header-right">
@@ -87,7 +87,7 @@ export default function Navbar() {
               )}
             </div>
 
-            <a href="#dich-vu" className="btn btn-outline-light header-cta">
+            <a href="/#dich-vu" className="btn btn-outline-light header-cta">
               {navText.bookNow}
             </a>
           </div>
@@ -122,13 +122,13 @@ export default function Navbar() {
         </div>
 
         <ul className="drawer-menu">
-          <li><a href="#dieu-huong" className="drawer-link" onClick={closeDrawer}>{navText.home}</a></li>
-          <li><a href="#dich-vu" className="drawer-link" onClick={closeDrawer}>{navText.services}</a></li>
-          <li><a href="#check-in" className="drawer-link" onClick={closeDrawer}>{navText.spots}</a></li>
-          <li><a href="#thu-vien" className="drawer-link" onClick={closeDrawer}>{navText.gallery}</a></li>
-          <li><a href="#nha-hang" className="drawer-link" onClick={closeDrawer}>{navText.dining}</a></li>
-          <li><a href="#danh-gia" className="drawer-link" onClick={closeDrawer}>{navText.reviews}</a></li>
-          <li><a href="#faq" className="drawer-link" onClick={closeDrawer}>{navText.faq}</a></li>
+          <li><a href="/#dieu-huong" className="drawer-link" onClick={closeDrawer}>{navText.home}</a></li>
+          <li><a href="/#dich-vu" className="drawer-link" onClick={closeDrawer}>{navText.services}</a></li>
+          <li><a href="/#check-in" className="drawer-link" onClick={closeDrawer}>{navText.spots}</a></li>
+          <li><a href="/#thu-vien" className="drawer-link" onClick={closeDrawer}>{navText.gallery}</a></li>
+          <li><a href="/menu" className="drawer-link" onClick={closeDrawer}>{navText.dining}</a></li>
+          <li><a href="/#danh-gia" className="drawer-link" onClick={closeDrawer}>{navText.reviews}</a></li>
+          <li><a href="/#faq" className="drawer-link" onClick={closeDrawer}>{navText.faq}</a></li>
           <li>
             <a href="tel:0979391234" className="drawer-link contact-drawer" onClick={closeDrawer}>
               <span className="material-icons">phone</span> {navText.callUs}: 0979 391 234

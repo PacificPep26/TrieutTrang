@@ -106,24 +106,24 @@ export const vi = {
     subtitle: "Mỗi bước chân tại Bàu Trắng đều là một bức tranh thiên nhiên tuyệt mỹ",
     items: [
       {
-        title: "Cổng Chào & Đội Xe Triều Trang",
-        desc: "Dàn xe Jeep sắc màu rực rỡ và mô tô địa hình ATV hùng hậu đón chào du khách tại cổng khu du lịch.",
-        image: "/images/jeep-gate.jpg"
+        title: "Đại Cảnh Đồi Cát Trắng",
+        desc: "Những triền cát trắng nối tiếp đến tận chân trời dưới tầng mây rộng lớn và đầy ấn tượng.",
+        image: "/images/bau-trang-dunes-clouds.jpg"
       },
       {
-        title: "Đỉnh Đồi Cát Trắng & Hồ Sen Bàu Bà",
-        desc: "Toàn cảnh hồ nước ốc đảo xanh ngắt bao bọc bởi triền cát trắng tinh khôi nhìn từ trên cao.",
-        image: "/images/spot-lake-real.jpg"
+        title: "Hồ Bàu Trắng Giữa Biển Cát",
+        desc: "Mặt hồ xanh thẳm nằm giữa những đụn cát vàng, tạo nên cảnh quan tương phản hiếm có.",
+        image: "/images/bau-trang-lake-panorama.jpg"
       },
       {
-        title: "Check-in Biểu Tượng I LOVE BAU TRANG",
-        desc: "Điểm check-in nổi tiếng nhất đồi cát cùng tà áo dài, cờ đỏ sao vàng và chú lạc đà thân thiện.",
-        image: "/images/spot-ibautrang.jpg"
+        title: "Vân Cát Trong Nắng Sớm",
+        desc: "Gió và nắng tạo nên những đường vân cát mềm mại trải dài trên không gian mênh mông.",
+        image: "/images/bau-trang-sand-ripples.jpg"
       },
       {
-        title: "Chinh Phục Đỉnh Đồi Cát Cùng Đội Xe",
-        desc: "Trải nghiệm phi xe địa hình xếp hàng thẳng tắp tung hoành trên sa mạc cát mênh mông.",
-        image: "/images/fleet-sand.jpg"
+        title: "Hoàng Hôn Trên Đỉnh Đồi Cát",
+        desc: "Ánh chiều phủ vàng các triền cát, mở ra khung cảnh khoáng đạt và đầy chất điện ảnh.",
+        image: "/images/bau-trang-sunset-dunes.jpg"
       }
     ]
   },

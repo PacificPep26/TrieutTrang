@@ -7,7 +7,7 @@
   border-top: 1px solid rgba(255, 255, 255, 0.05);
 
   @media (max-width: 767px) {
-    padding: 2rem 0 1.2rem;
+    padding: 1.25rem 0 0.8rem;
   }
 }
 
@@ -21,6 +21,11 @@
     grid-template-columns: 2fr 1fr 1.5fr;
     gap: 3rem;
     margin-bottom: $spacing-md;
+  }
+
+  @media (max-width: 767px) {
+    gap: 0.9rem;
+    margin-bottom: 0.8rem;
   }
 }
 
@@ -39,6 +44,22 @@
     line-height: 1.5;
     margin-bottom: 1rem;
     max-width: 420px;
+  }
+
+  @media (max-width: 767px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+    .logo {
+      margin-bottom: 0;
+      font-size: 1.05rem;
+    }
+
+    .brand-desc {
+      display: none;
+    }
   }
 }
 
@@ -66,6 +87,18 @@
       color: $color-dark;
     }
   }
+
+  @media (max-width: 767px) {
+    flex: none;
+    gap: 0.4rem;
+
+    a {
+      width: 30px;
+      height: 30px;
+
+      .material-icons { font-size: 1rem; }
+    }
+  }
 }
 
 .footer-title {
@@ -76,6 +109,11 @@
   margin-bottom: 0.8rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+
+  @media (max-width: 767px) {
+    margin-bottom: 0.4rem;
+    font-size: 0.85rem;
+  }
 }
 
 .footer-links ul {
@@ -97,6 +135,15 @@
     &:hover {
       color: $color-gold;
       transform: translateX(4px);
+    }
+  }
+
+  @media (max-width: 767px) {
+    gap: 0.15rem 0.8rem;
+
+    a {
+      padding: 0.12rem 0;
+      font-size: 0.76rem;
     }
   }
 }
@@ -124,6 +171,21 @@
       color: $color-gold;
     }
   }
+
+  @media (max-width: 767px) {
+    gap: 0.35rem;
+
+    li {
+      gap: 0.45rem;
+      font-size: 0.76rem;
+      line-height: 1.35;
+    }
+
+    li:nth-child(3),
+    li:nth-child(4) {
+      display: none;
+    }
+  }
 }
 
 .footer-bottom {
@@ -137,5 +199,10 @@
 
   .footer-author {
     color: rgba(255, 255, 255, 0.35);
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 0.65rem;
+    font-size: 0.66rem;
   }
 }

@@ -1,6 +1,5 @@
 /* Import global styling framework */
 @use './styles/variables' as *;
-@use './styles/global';
 
 .app-container {
   overflow-x: hidden;

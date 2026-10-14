@@ -52,6 +52,13 @@ export default function CheckInSpots() {
             </motion.div>
           ))}
         </div>
+        <p className="spot-photo-credits">
+          Photo credits:{' '}
+          <a href="https://commons.wikimedia.org/wiki/File:Mui_Ne_-_White_sanddunes.JPG" target="_blank" rel="noreferrer">Chris Blackhead</a>,{' '}
+          <a href="https://commons.wikimedia.org/wiki/File:B%C3%A0u_Tr%E1%BA%AFng_(28917099606).jpg" target="_blank" rel="noreferrer">Hưng Hồ Bá</a>,{' '}
+          <a href="https://commons.wikimedia.org/wiki/File:Mui_Ne_sand_dunes_1.jpg" target="_blank" rel="noreferrer">ruben i</a>,{' '}
+          <a href="https://commons.wikimedia.org/wiki/File:White_Sand_Dunes_(14614693572).jpg" target="_blank" rel="noreferrer">Erwin Verbruggen</a>
+        </p>
       </div>
     </section>
   );

@@ -107,24 +107,24 @@ export const en = {
     subtitle: "Every corner of White Sand Dunes offers an awe-inspiring natural canvas",
     items: [
       {
-        title: "Trieu Trang Entrance & Jeep Fleet",
-        desc: "Vibrant fleet of colorful safari Jeeps and heavy-duty ATVs welcoming travelers at the main gate.",
-        image: "/images/jeep-gate.jpg"
+        title: "Vast White Sand Dunes",
+        desc: "Rolling white dunes stretch toward the horizon beneath a dramatic and boundless sky.",
+        image: "/images/bau-trang-dunes-clouds.jpg"
       },
       {
-        title: "White Dune Crest & Lotus Oasis",
-        desc: "Known as Vietnam's little Sahara, panoramic view of emerald lake bordered by pristine rolling dunes.",
-        image: "/images/spot-lake-real.jpg"
+        title: "Bau Trang Lake Amid the Dunes",
+        desc: "Deep blue water meets golden sand in one of the region's most striking natural contrasts.",
+        image: "/images/bau-trang-lake-panorama.jpg"
       },
       {
-        title: "I LOVE BAU TRANG Landmark",
-        desc: "The premier photo spot featuring traditional Ao Dai, golden dunes, and affectionate camel portraits.",
-        image: "/images/spot-ibautrang.jpg"
+        title: "Sand Ripples at First Light",
+        desc: "Wind and low sunlight sculpt flowing patterns across the seemingly endless desert floor.",
+        image: "/images/bau-trang-sand-ripples.jpg"
       },
       {
-        title: "Conquering Sand Dunes With Fleet",
-        desc: "Witness the magnificent convoy of off-road ATVs and safari Jeeps traversing endless desert ridges.",
-        image: "/images/fleet-sand.jpg"
+        title: "Sunset Over the Dune Crest",
+        desc: "Golden light sweeps across the dunes, revealing a cinematic and wide-open landscape.",
+        image: "/images/bau-trang-sunset-dunes.jpg"
       }
     ]
   },

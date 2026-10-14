@@ -107,24 +107,24 @@ export const ko = {
     subtitle: "화이트 샌듄의 모든 순간은 영화 속 한 장면처럼 아름답습니다",
     items: [
       {
-        title: "트리에우 짱 입구 & 지프단",
-        desc: "알록달록한 지프차와 강력한 ATV 사륜바이크 군단이 여행객을 맞이하는 랜드마크입니다.",
-        image: "/images/jeep-gate.jpg"
+        title: "끝없이 펼쳐진 화이트 샌듄",
+        desc: "웅장한 하늘 아래 새하얀 모래 언덕이 지평선 너머까지 이어집니다.",
+        image: "/images/bau-trang-dunes-clouds.jpg"
       },
       {
-        title: "화이트 샌듄 정상 & 연꽃 호수",
-        desc: "베트남의 작은 사하라 사막으로 불리며, 하얀 모래와 푸른 담수 호수가 어우러진 신비로운 풍경을 선사합니다.",
-        image: "/images/spot-lake-real.jpg"
+        title: "모래 언덕 속 바우짱 호수",
+        desc: "깊고 푸른 호수와 황금빛 모래가 만나 독특하고 장엄한 풍경을 만듭니다.",
+        image: "/images/bau-trang-lake-panorama.jpg"
       },
       {
-        title: "I LOVE BAU TRANG 포토존",
-        desc: "베트남 전통 아오자이, 붉은 금성홍기, 사막 낙타와 함께 남기는 시그니처 포토스팟입니다.",
-        image: "/images/spot-ibautrang.jpg"
+        title: "아침 햇살 속 모래 물결",
+        desc: "바람과 낮은 햇살이 끝없이 펼쳐진 모래 위에 부드러운 무늬를 새깁니다.",
+        image: "/images/bau-trang-sand-ripples.jpg"
       },
       {
-        title: "사막 능선을 정복하는 사륜 차량단",
-        desc: "끝없이 펼쳐진 화이트 샌듄 능선 위를 일렬로 질주하는 압도적인 장관을 만나보세요.",
-        image: "/images/fleet-sand.jpg"
+        title: "모래 언덕 위의 노을",
+        desc: "황금빛 노을이 모래 능선을 감싸며 영화처럼 광활한 장면을 펼쳐 보입니다.",
+        image: "/images/bau-trang-sunset-dunes.jpg"
       }
     ]
   },

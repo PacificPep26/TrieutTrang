@@ -25,13 +25,13 @@ export default function Footer() {
           <div className="footer-links">
             <h4 className="footer-title">{fData.quickLinks}</h4>
             <ul>
-              <li><a href="#dieu-huong">{navText.home}</a></li>
-              <li><a href="#dich-vu">{navText.services}</a></li>
-              <li><a href="#check-in">{navText.spots}</a></li>
-              <li><a href="#thu-vien">{navText.gallery}</a></li>
-              <li><a href="#nha-hang">{navText.dining}</a></li>
-              <li><a href="#danh-gia">{navText.reviews}</a></li>
-              <li><a href="#faq">{navText.faq}</a></li>
+              <li><a href="/#dieu-huong">{navText.home}</a></li>
+              <li><a href="/#dich-vu">{navText.services}</a></li>
+              <li><a href="/#check-in">{navText.spots}</a></li>
+              <li><a href="/#thu-vien">{navText.gallery}</a></li>
+              <li><a href="/menu">{navText.dining}</a></li>
+              <li><a href="/#danh-gia">{navText.reviews}</a></li>
+              <li><a href="/#faq">{navText.faq}</a></li>
             </ul>
           </div>
 

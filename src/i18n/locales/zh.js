@@ -107,24 +107,24 @@ export const zh = {
     subtitle: "在白沙丘的每一步，都是大自然精雕细琢的壮丽画卷",
     items: [
       {
-        title: "朝庄迎宾大门与吉普车队",
-        desc: "缤纷炫彩的专属越野吉普车队与动力澎湃的ATV摩托在此整齐列队迎接八方来客。",
-        image: "/images/jeep-gate.jpg"
+        title: "辽阔壮美的白沙丘",
+        desc: "洁白起伏的沙丘在壮阔天空下延伸至天际，展现震撼视野。",
+        image: "/images/bau-trang-dunes-clouds.jpg"
       },
       {
-        title: "白沙丘之巅与莲花湖绿洲",
-        desc: "被誉为越南的小撒哈拉，纯净白沙与湖水相互辉映，从高空俯瞰宛如沙海翡翠。",
-        image: "/images/spot-lake-real.jpg"
+        title: "沙海之中的白湖",
+        desc: "深蓝湖水与金色沙丘在此交汇，形成当地罕见而鲜明的自然奇景。",
+        image: "/images/bau-trang-lake-panorama.jpg"
       },
       {
-        title: "I LOVE BAU TRANG 标志打卡",
-        desc: "白沙丘最具代表性的人气地标，传统奥黛、红旗与温顺骆驼同框，尽显美奈风情。",
-        image: "/images/spot-ibautrang.jpg"
+        title: "晨光下的细腻沙纹",
+        desc: "风与低角度阳光在无垠沙地上雕刻出柔美而富有层次的纹理。",
+        image: "/images/bau-trang-sand-ripples.jpg"
       },
       {
-        title: "车队列阵征服起伏沙脊",
-        desc: "感受长列越野车队在浩瀚金沙间穿梭疾驰的震撼视觉盛宴，定格无畏探索瞬间。",
-        image: "/images/fleet-sand.jpg"
+        title: "沙丘之巅的落日",
+        desc: "金色暮光掠过起伏沙丘，铺展开辽阔而极具电影感的壮丽景象。",
+        image: "/images/bau-trang-sunset-dunes.jpg"
       }
     ]
   },

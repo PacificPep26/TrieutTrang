@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from '../../i18n/LanguageContext';
 import './FloatingContact.scss';
 
 const ZaloIcon = () => (
@@ -10,6 +11,9 @@ const ZaloIcon = () => (
 );
 
 export default function FloatingContact() {
+  const { dictionary } = useTranslation();
+  const callUs = dictionary.nav.callUs;
+
   return (
     <div className="floating-contacts">
       {/* Floating Zalo */}
@@ -18,7 +22,7 @@ export default function FloatingContact() {
         target="_blank" 
         rel="noopener noreferrer" 
         className="floating-btn btn-zalo"
-        aria-label="Liên hệ Zalo"
+        aria-label="Zalo"
         animate={{ y: [0, -8, 0] }}
         transition={{
           y: {
@@ -39,7 +43,7 @@ export default function FloatingContact() {
       <motion.a 
         href="tel:0979391234" 
         className="floating-btn btn-phone"
-        aria-label="Gọi hotline"
+        aria-label={callUs}
         animate={{ y: [0, -8, 0] }}
         transition={{
           y: {
@@ -54,7 +58,7 @@ export default function FloatingContact() {
       >
         <span className="pulse-ring"></span>
         <span className="material-icons">phone</span>
-        <span className="tooltip-text">Gọi ngay</span>
+        <span className="tooltip-text">{callUs}</span>
       </motion.a>
     </div>
   );

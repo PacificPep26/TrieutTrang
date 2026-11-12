@@ -10,7 +10,10 @@ This is the landing site for **Du Lịch Triều Trang**, an off-road tour busin
 - Next.js 15 (App Router), React 18, SCSS (`sass`), `framer-motion`, `lucide-react`. Tailwind is not installed: the `lg:`/`sm:` classes in `Contact.jsx` do nothing. Real styles live in `.scss`.
 - `npm run dev` runs the dev server; `npm run build` builds for production.
 - `next.config.mjs` uses `.next-dev` for dev and `.next` for build, so a build does not break a running dev server. Keep this.
-- Deploy: push to `main` does **not** reliably auto-deploy. Run `vercel --prod --yes` (the CLI is logged in as `huynhhoangvu`).
+- Deploy: push to `main` does **not** reliably auto-deploy. Run `vercel --prod --yes` (the CLI is logged in as `huynhhoangvu`). If it prints `"message": "fetch failed"`, that is a network error during upload, so just rerun it. `.vercelignore` keeps unused uploads out of the bundle to make that rare.
+- Before deploying, run `npm run build` and check every `/images/...` path used in `src/` and `app/` exists in `public/`. An agent once deleted 3 images that were still in use.
+- Never delete an image or video from `public/` unless a search of `src/` and `app/` shows nothing references it.
+- When editing `.scss`/`.jsx` from PowerShell, never put `$` or backtick strings inside double-quoted replacements; they get expanded and silently break SCSS variables and template literals. Use the Edit tool instead.
 
 ## Structure
 
@@ -20,7 +23,10 @@ This is the landing site for **Du Lịch Triều Trang**, an off-road tour busin
 - `src/components/<Name>/<Name>.jsx + .scss` holds one component per section. The order is Navbar, Hero, TrustBar, Services, CheckInSpots, Gallery, RestaurantMenu, Testimonials, FAQ, CTA (inline in App), Contact, FloatingContact, SectionDots, Footer.
 - `src/i18n/LanguageContext.jsx` and `src/i18n/locales/{vi,en,ko,zh}.js` hold all page text. **Change every language together.** Flags are flagcdn.com images keyed by `flag: 'vn'|'gb'|'kr'|'cn'`, because emoji flags don't render on Windows.
 - `src/styles/_variables.scss` holds colors and fonts. Global styles are in `src/styles/global.scss`.
-- `RestaurantMenu.jsx` keeps the menu data inline and in Vietnamese only, not in i18n.
+- Contact section text is in the `contact` key of each locale. The full menu at `/menu` is multilingual in `src/data/fullMenuData.js`. The homepage dining section uses `dining.specialties` in each locale plus `src/data/menuData.json` for price and image.
+- Copy rule: the business is **driver-led**. A professional driver carries the guests (ATV 1–2 guests, Jeep up to 6). Never write "self-drive", "tự lái" or "rent a car/ATV".
+- Mobile rule: keep card grids at 2 columns on phones. The gallery shows 6 photos on phones until "show more" is pressed. The page was 12,550px tall on a 390px phone and is now about 7,700px; keep it short.
+- Korean brand spelling is 찌에우짱 and Zalo stays "Zalo" in every language.
 - The hero video is `public/videos/hero.mp4` (720p30, about 4.5 MB) with poster `hero-poster.jpg`.
 
 ## Business facts (source: owner's price board and business license)

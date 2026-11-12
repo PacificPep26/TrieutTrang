@@ -1,0 +1,4 @@
+﻿# Not referenced by the site; keeps `vercel --prod` uploads small (a big upload is what failed with "fetch failed")
+public/images/17*
+public/images/Thucdon/
+public/images/*.pdf

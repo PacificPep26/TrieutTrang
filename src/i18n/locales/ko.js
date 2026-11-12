@@ -19,7 +19,7 @@ export const ko = {
     galleryBtn: "사진 보기"
   },
   trust: {
-    badge: "트리에우짱을 선택하는 이유",
+    badge: "찌에우짱을 선택하는 이유",
     title: "편안한 체험, 전문적인 서비스",
     items: [
       {
@@ -35,7 +35,7 @@ export const ko = {
       {
         icon: "access_time_filled",
         title: "간편한 예약",
-        desc: "핫라인 또는 잘로로 빠르게 예약하고 일정을 안내받으세요."
+        desc: "핫라인 또는 Zalo로 빠르게 예약하고 일정을 안내받으세요."
       },
       {
         icon: "verified_user",
@@ -142,7 +142,7 @@ export const ko = {
   gallery: {
     tag: "MOMENTS & MEMORIES",
     title: "실제 사진",
-    subtitle: "트리에우짱과 함께한 바우짱의 순간들",
+    subtitle: "찌에우짱과 함께한 바우짱의 순간들",
     more: "사진 더 보기",
     less: "접기"
   },
@@ -160,7 +160,7 @@ export const ko = {
       },
       {
         q: "투어는 어떻게 예약하나요?",
-        a: "핫라인 0979 391 234로 전화하거나 잘로로 메시지를 보내 일정을 상담하고 예약하세요."
+        a: "핫라인 0979 391 234로 전화하거나 Zalo로 메시지를 보내 일정을 상담하고 예약하세요."
       },
       {
         q: "ATV는 안전한가요?",
@@ -176,7 +176,7 @@ export const ko = {
     title: "바우짱 여행 준비되셨나요?",
     desc: "연락 주시면 일정 상담과 예약을 도와드립니다.",
     callNow: "전화: 0979 391 234",
-    chatZalo: "잘로로 문의"
+    chatZalo: "Zalo로 문의"
   },
   contact: {
     tag: "문의하기",
@@ -191,13 +191,13 @@ export const ko = {
     amenitiesTitle: "편의시설",
     amenities: ["주차장", "화장실", "탈의실", "음료", "WiFi"],
     callNow: "전화하기",
-    mapTitle: "트리에우짱 여행 지도"
+    mapTitle: "찌에우짱 여행 지도"
   },
   footer: {
-    desc: "트리에우짱 여행: 럼동성 호아탕 바우짱의 지프 투어, ATV, 모래언덕 체험.",
+    desc: "찌에우짱 여행: 럼동성 호아탕 바우짱의 지프 투어, ATV, 모래언덕 체험.",
     quickLinks: "바로가기",
     contactInfo: "연락처",
     address: "베트남 럼동성 호아탕사 홍럼마을 바우짱",
-    rights: "Copyright © 트리에우짱 여행."
+    rights: "Copyright © 찌에우짱 여행."
   }
 };

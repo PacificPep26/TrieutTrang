@@ -133,7 +133,11 @@ export const vi = {
     subtitle: "Nghỉ chân sau hành trình với các món đặc sản và thức uống mát lạnh.",
     menuIntro: "Đặc sản đồi cát, hải sản, cơm, mì, lẩu và thức uống.",
     viewMenu: "Xem Thực Đơn",
-    reserveTable: "Đặt Chỗ Trước"
+    reserveTable: "Đặt Chỗ Trước",
+    specialties: [
+      { name: "Dông cát", desc: "Nướng muối ớt, xào lăn xúc bánh tráng, nướng mọi." },
+      { name: "Gà đồi cát", desc: "Gà ta thả đồi: xé phay trộn gỏi, nướng than hoa, nấu cháo." }
+    ]
   },
   gallery: {
     tag: "MOMENTS & MEMORIES",
@@ -173,6 +177,21 @@ export const vi = {
     desc: "Liên hệ để được tư vấn lịch trình và giữ chỗ.",
     callNow: "Gọi Ngay: 0979 391 234",
     chatZalo: "Tư Vấn Qua Zalo"
+  },
+  contact: {
+    tag: "Liên hệ với chúng tôi",
+    title: "Đến đây dễ dàng",
+    desc: "Tour xe Jeep, ATV và các trải nghiệm đồi cát tại Bàu Trắng. Luôn sẵn sàng đón tiếp quý khách.",
+    infoTitle: "Thông tin liên hệ",
+    hotline: "Hotline",
+    address: "Địa chỉ",
+    addressValue: "Hòa Thắng, Lâm Đồng",
+    hours: "Giờ mở cửa",
+    hoursValue: "5:00 – 17:30 hàng ngày",
+    amenitiesTitle: "Tiện ích",
+    amenities: ["Bãi đậu xe", "WC", "Thay đồ", "Nước uống", "WiFi"],
+    callNow: "Gọi Ngay",
+    mapTitle: "Bản đồ Du Lịch Triều Trang"
   },
   footer: {
     desc: "Du Lịch Triều Trang: tour xe Jeep, ATV và trải nghiệm đồi cát tại Bàu Trắng, Hòa Thắng, Lâm Đồng.",

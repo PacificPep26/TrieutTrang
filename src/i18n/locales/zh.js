@@ -133,7 +133,11 @@ export const zh = {
     subtitle: "行程结束后，来品尝当地特色美食和冰凉饮品。",
     menuIntro: "沙丘特色菜、海鲜、米饭、面条、火锅和饮品。",
     viewMenu: "查看菜单",
-    reserveTable: "预订座位"
+    reserveTable: "预订座位",
+    specialties: [
+      { name: "沙蜥（Dông）", desc: "椒盐烤、香炒配米纸、炭烤。" },
+      { name: "沙丘放养鸡", desc: "放养土鸡：拌沙拉、炭烤、煮粥。" }
+    ]
   },
   gallery: {
     tag: "MOMENTS & MEMORIES",
@@ -173,6 +177,21 @@ export const zh = {
     desc: "联系我们，获取行程建议并预订。",
     callNow: "立即致电：0979 391 234",
     chatZalo: "Zalo咨询"
+  },
+  contact: {
+    tag: "联系我们",
+    title: "轻松到达",
+    desc: "白沙丘的吉普车行程、ATV与沙丘体验，随时欢迎您的到来。",
+    infoTitle: "联系方式",
+    hotline: "热线",
+    address: "地址",
+    addressValue: "和胜乡，林同",
+    hours: "营业时间",
+    hoursValue: "每天 5:00 – 17:30",
+    amenitiesTitle: "设施",
+    amenities: ["停车场", "洗手间", "更衣室", "饮品", "WiFi"],
+    callNow: "立即致电",
+    mapTitle: "Triều Trang 旅游地图"
   },
   footer: {
     desc: "Triều Trang 旅游：林同省和胜乡白沙丘的吉普车行程、ATV与沙丘体验。",

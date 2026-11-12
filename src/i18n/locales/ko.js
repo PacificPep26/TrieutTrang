@@ -133,7 +133,11 @@ export const ko = {
     subtitle: "투어 후 현지 특산 요리와 시원한 음료로 휴식하세요.",
     menuIntro: "모래언덕 특산 요리, 해산물, 밥, 면, 전골, 음료.",
     viewMenu: "메뉴 보기",
-    reserveTable: "자리 예약"
+    reserveTable: "자리 예약",
+    specialties: [
+      { name: "모래도마뱀 (동)", desc: "소금·고추 구이, 라이스페이퍼와 먹는 볶음, 숯불구이." },
+      { name: "언덕 방목 닭", desc: "방목 닭 샐러드, 숯불구이, 닭죽." }
+    ]
   },
   gallery: {
     tag: "MOMENTS & MEMORIES",
@@ -173,6 +177,21 @@ export const ko = {
     desc: "연락 주시면 일정 상담과 예약을 도와드립니다.",
     callNow: "전화: 0979 391 234",
     chatZalo: "잘로로 문의"
+  },
+  contact: {
+    tag: "문의하기",
+    title: "찾아오기 쉬워요",
+    desc: "바우짱의 지프 투어, ATV, 모래언덕 체험. 언제든 방문을 환영합니다.",
+    infoTitle: "연락처",
+    hotline: "핫라인",
+    address: "주소",
+    addressValue: "호아탕, 럼동",
+    hours: "운영 시간",
+    hoursValue: "매일 5:00 – 17:30",
+    amenitiesTitle: "편의시설",
+    amenities: ["주차장", "화장실", "탈의실", "음료", "WiFi"],
+    callNow: "전화하기",
+    mapTitle: "트리에우짱 여행 지도"
   },
   footer: {
     desc: "트리에우짱 여행: 럼동성 호아탕 바우짱의 지프 투어, ATV, 모래언덕 체험.",

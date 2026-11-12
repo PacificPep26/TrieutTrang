@@ -24,17 +24,17 @@ export default function RestaurantMenu() {
 
         <div className="specialty-grid">
           {specialties.map((item, index) => (
-            <motion.article className="specialty-card" key={item.name} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.25 }} transition={{ delay: index * 0.08 }}>
+            <motion.article className="specialty-card" key={item.image} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.25 }} transition={{ delay: index * 0.08 }}>
               <div className="specialty-image">
-                <img src={item.image} alt={item.name} loading="lazy" />
+                <img src={item.image} alt={(diningData.specialties?.[index] || item).name} loading="lazy" />
                 <span>{specialtyLabel}</span>
               </div>
               <div className="specialty-content">
                 <div className="specialty-heading">
-                  <h3>{item.name}</h3>
+                  <h3>{(diningData.specialties?.[index] || item).name}</h3>
                   <strong>{item.price}</strong>
                 </div>
-                <p>{item.desc}</p>
+                <p>{(diningData.specialties?.[index] || item).desc}</p>
               </div>
             </motion.article>
           ))}

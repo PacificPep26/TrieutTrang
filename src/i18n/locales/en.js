@@ -133,7 +133,11 @@ export const en = {
     subtitle: "Take a break after your trip with local specialties and cold drinks.",
     menuIntro: "Dune specialties, seafood, rice, noodles, hotpot and drinks.",
     viewMenu: "View Menu",
-    reserveTable: "Reserve a Table"
+    reserveTable: "Reserve a Table",
+    specialties: [
+      { name: "Sand Lizard (Dông)", desc: "Chili-salt grilled, stir-fried to eat with rice paper, or charcoal-grilled." },
+      { name: "Hill-Raised Chicken", desc: "Free-range chicken: shredded salad, charcoal-grilled, or porridge." }
+    ]
   },
   gallery: {
     tag: "MOMENTS & MEMORIES",
@@ -173,6 +177,21 @@ export const en = {
     desc: "Contact us to plan your trip and reserve your spot.",
     callNow: "Call Now: 0979 391 234",
     chatZalo: "Chat on Zalo"
+  },
+  contact: {
+    tag: "Contact us",
+    title: "Easy to Reach",
+    desc: "Jeep tours, ATV rides and dune experiences at Bau Trang. We are ready to welcome you.",
+    infoTitle: "Contact information",
+    hotline: "Hotline",
+    address: "Address",
+    addressValue: "Hoa Thang, Lam Dong",
+    hours: "Opening hours",
+    hoursValue: "5:00 – 17:30 daily",
+    amenitiesTitle: "Amenities",
+    amenities: ["Parking", "Restrooms", "Changing room", "Drinks", "WiFi"],
+    callNow: "Call Now",
+    mapTitle: "Trieu Trang Travel map"
   },
   footer: {
     desc: "Trieu Trang Travel: Jeep tours, ATV rides and dune experiences at Bau Trang, Hoa Thang, Lam Dong.",

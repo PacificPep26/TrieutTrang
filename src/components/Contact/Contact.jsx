@@ -4,22 +4,25 @@ import {
   Bath, 
   Shirt, 
   Coffee, 
-  Wifi, 
-  Clock 
+  Wifi
 } from 'lucide-react';
 import ShinyText from '../animations/ShinyText';
 import SplitText from '../animations/SplitText';
+import { useTranslation } from '../../i18n/LanguageContext';
 import './Contact.scss';
 
+const AMENITY_ICONS = [
+  <ParkingCircle size={14} />,
+  <Bath size={14} />,
+  <Shirt size={14} />,
+  <Coffee size={14} />,
+  <Wifi size={14} />,
+];
+
 export default function Contact() {
-  const amenities = [
-    { label: 'Bãi đậu xe', icon: <ParkingCircle size={14} /> },
-    { label: 'WC', icon: <Bath size={14} /> },
-    { label: 'Thay đồ', icon: <Shirt size={14} /> },
-    { label: 'Nước uống', icon: <Coffee size={14} /> },
-    { label: 'WiFi', icon: <Wifi size={14} /> },
-    { label: 'Mở cửa 24/7', icon: <Clock size={14} /> },
-  ];
+  const { dictionary } = useTranslation();
+  const c = dictionary.contact;
+  const amenities = c.amenities.map((label, i) => ({ label, icon: AMENITY_ICONS[i] }));
 
   return (
     <section
@@ -31,26 +34,26 @@ export default function Contact() {
       <div className="info-block flex w-full shrink-0 flex-col justify-center p-8 text-white sm:p-10 lg:w-[380px] lg:max-h-[min(88dvh,52rem)] lg:overflow-y-auto lg:p-10 xl:w-[420px]">
         
         <ShinyText 
-          text="Liên hệ với chúng tôi" 
+          text={c.tag}
           className="contact-shiny-tag font-black text-[10px] uppercase tracking-[0.4em] mb-4 whitespace-nowrap" 
         />
         <h2 className="contact-title text-3xl sm:text-4xl font-black uppercase tracking-tighter mb-4 [text-wrap:balance] text-white text-center lg:text-left">
           <SplitText 
-            text="Đến đây dễ dàng" 
+            text={c.title}
             delay={0.05} 
             className="justify-center lg:justify-start"
           />
         </h2>
         
         <p className="contact-desc mb-6 pr-0 text-sm font-medium leading-relaxed text-white/70 [text-wrap:balance]">
-          Hệ thống dịch vụ xe địa hình, ATV, Jeep và những trải nghiệm đồi cát đẳng cấp nhất tại Bàu Trắng. Luôn sẵn sàng đón tiếp bạn.
+          {c.desc}
         </p>
 
-        <h3 className="contact-sub-title font-black text-lg mb-4 uppercase tracking-wider text-white">Thông tin liên hệ</h3>
+        <h3 className="contact-sub-title font-black text-lg mb-4 uppercase tracking-wider text-white">{c.infoTitle}</h3>
 
         <div className="mb-6 flex-col">
            <div className="info-row py-4 border-b border-white/10">
-              <p className="info-tag text-[10px] font-black uppercase tracking-widest mb-1">Hotline</p>
+              <p className="info-tag text-[10px] font-black uppercase tracking-widest mb-1">{c.hotline}</p>
               <div className="info-val font-black uppercase text-sm text-white">
                 <a href="tel:0979391234" className="hover-gold transition-colors">0979 391 234</a> 
                 <span className="divider text-white/40 mx-1">/</span> 
@@ -59,21 +62,21 @@ export default function Contact() {
            </div>
 
            <div className="info-row py-4 border-b border-white/10">
-              <p className="info-tag text-[10px] font-black uppercase tracking-widest mb-1">Địa chỉ</p>
+              <p className="info-tag text-[10px] font-black uppercase tracking-widest mb-1">{c.address}</p>
               <div className="info-val info-val-muted font-black uppercase text-sm text-white/80">
-                <a href="https://maps.app.goo.gl/TLHNvxT7k9VyjmmA9" className="hover-gold transition-colors">HÒA THẮNG, LÂM ĐỒNG</a>
+                <a href="https://maps.app.goo.gl/TLHNvxT7k9VyjmmA9" className="hover-gold transition-colors">{c.addressValue}</a>
               </div>
            </div>
 
            <div className="info-row py-4 border-b border-white/10">
-              <p className="info-tag text-[10px] font-black uppercase tracking-widest mb-1">Giờ mở cửa</p>
+              <p className="info-tag text-[10px] font-black uppercase tracking-widest mb-1">{c.hours}</p>
               <div className="info-val info-val-muted font-black uppercase text-sm text-white/80">
-                5:00 – 17:30 Hàng ngày
+                {c.hoursValue}
               </div>
            </div>
         </div>
 
-        <h3 className="contact-sub-title mb-4 font-black text-lg uppercase tracking-wider text-white">Tiện ích</h3>
+        <h3 className="contact-sub-title mb-4 font-black text-lg uppercase tracking-wider text-white">{c.amenitiesTitle}</h3>
         
         <div className="amenities-grid grid grid-cols-2 gap-y-4">
           {amenities.map(item => (
@@ -95,7 +98,7 @@ export default function Contact() {
              href="tel:0979391234" 
              className="map-call-btn text-white px-8 py-4 font-black text-xs uppercase tracking-widest transition-colors shadow-2xl"
            >
-             Gọi Ngay
+             {c.callNow}
            </a>
         </div>
 
@@ -107,7 +110,7 @@ export default function Contact() {
           style={{ border: 0 }}
           allowFullScreen
           loading="lazy"
-          title="Bàu Cát Trắng - Maps"
+          title={c.mapTitle}
         />
       </div>
     </section>

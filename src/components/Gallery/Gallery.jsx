@@ -5,6 +5,7 @@ import './Gallery.scss';
 
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState(null);
+  const [showAll, setShowAll] = useState(false);
   const { dictionary } = useTranslation();
   const gData = dictionary.gallery;
 
@@ -84,16 +85,16 @@ export default function Gallery() {
         </motion.div>
 
         <motion.div 
-          className="masonry-grid"
+          className={`masonry-grid${showAll ? ' expanded' : ''}`}
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.05 }}
         >
-          {images.map(img => (
+          {images.map((img, i) => (
             <motion.div 
               key={img.id} 
-              className={`masonry-item masonry-item--${img.size}`}
+              className={`masonry-item masonry-item--${img.size}${i >= 6 ? ' masonry-item--extra' : ''}`}
               variants={itemVariants}
               onClick={() => openLightbox(img.path)}
               whileHover={{ 
@@ -114,6 +115,12 @@ export default function Gallery() {
             </motion.div>
           ))}
         </motion.div>
+
+        <div className="gallery-actions">
+          <button className="gallery-toggle-btn" onClick={() => setShowAll(!showAll)}>
+            {showAll ? (gData.less || 'Thu gọn') : (gData.more || 'Xem thêm ảnh')}
+          </button>
+        </div>
       </div>
 
       {/* Lightbox Modal */}

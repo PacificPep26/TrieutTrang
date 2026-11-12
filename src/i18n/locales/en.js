@@ -2,9 +2,9 @@ export const en = {
   nav: {
     home: "Home",
     services: "Tours & Services",
-    spots: "Top Spots",
+    spots: "Photo Spots",
     gallery: "Gallery",
-    dining: "Rest & Dining",
+    dining: "Dining",
     reviews: "Reviews",
     faq: "FAQ",
     bookNow: "Book Now",
@@ -13,187 +13,172 @@ export const en = {
   },
   hero: {
     tag: "MUI NE DESERT PARADISE",
-    title: "White Sand Dunes",
-    subtitle: "Experience thrilling speed, breathtaking sunrises, and golden sunsets across vast sand dunes with our premium Jeep & ATV fleet.",
-    exploreBtn: "Explore Services",
-    galleryBtn: "View Gallery"
+    title: "Bau Cat Trang",
+    subtitle: "Jeep tours, ATV rides and white sand dune experiences with experienced local drivers.",
+    exploreBtn: "View services",
+    galleryBtn: "View photos"
   },
   trust: {
-    badge: "PREMIUM SERVICE COMMITMENT",
-    title: "Why Over 10,000+ Travelers Choose Us?",
+    badge: "WHY TRIEU TRANG",
+    title: "A Smooth Experience, Professionally Run",
     items: [
       {
         icon: "directions_car",
-        title: "Modern & Stylish Fleet",
-        desc: "Eye-catching vibrant Jeep models and powerful ATV quad bikes, rigorously inspected and maintained."
+        title: "A Varied Fleet",
+        desc: "Jeeps, Land Cruisers and 400cc ATVs, regularly maintained."
       },
       {
         icon: "photo_camera",
-        title: "Photographer-Drivers",
-        desc: "Friendly local drivers who know every scenic angle, helping you capture magazine-quality photos and videos."
+        title: "Local Drivers",
+        desc: "Professional drivers who know the terrain and the best photo spots."
       },
       {
         icon: "access_time_filled",
-        title: "Door-to-Door Pickup",
-        desc: "Punctual hotel & resort pickup/drop-off across Mui Ne and Phan Thiet without any hassle."
+        title: "Easy Booking",
+        desc: "Book quickly by hotline or Zalo, with clear trip advice."
       },
       {
         icon: "verified_user",
-        title: "Transparent Fixed Pricing",
-        desc: "Clear upfront rates with zero hidden charges. Responsive customer support available 24/7."
+        title: "Clear Pricing",
+        desc: "Published prices for every service. Gate tickets and tax are not included."
       }
     ]
   },
   services: {
-    tag: "TOURS & EXPERIENCES",
-    title: "Exclusive Journeys & Activities",
+    title: "Services & Experiences",
     tabs: {
       all: "All",
-      jeep: "Jeep Tours",
-      adventure: "ATV & Desert Ride"
+      jeep: "Jeep Tour",
+      adventure: "Dune Experiences"
     },
     items: [
       {
-        id: "jeep-sunset",
+        id: "jeep-tour",
         type: "jeep",
-        title: "Sunset Jeep Tour Red Dunes",
-        desc: "Depart at 1:30 PM to admire romantic golden dunes at dusk, visiting Fairy Stream and traditional Fishing Village.",
-        price: "800,000 VND / Car (Up to 6 guests)",
-        badge: "01:30 - 06:00 PM",
+        title: "Jeep Tour Across the Dunes",
+        desc: "Your driver takes the group through the white dunes, Bau Trang lake and photo spots. Up to 6 guests per car, departs 1:30 PM for sunset.",
+        price: "800,000 VND / Car",
+        badge: "Sunset",
         image: "/images/jeep-gate.jpg"
       },
       {
         id: "atv",
         type: "adventure",
-        title: "ATV Quad Bike Dunes Ride",
-        desc: "Take the wheel to conquer steep sandy slopes and feel the absolute rush of adrenaline on the dunes.",
+        title: "ATV Dune Ride",
+        desc: "A driver rides a 400cc ATV and takes you up the steep dune slopes. Each ATV carries 1–2 guests.",
         price: "800,000 VND / 20 Mins",
-        badge: "High Adrenaline",
+        badge: "Thrilling",
         image: "/images/atv-convoy.jpg"
       },
       {
         id: "camel",
         type: "adventure",
-        title: "Desert Camel Riding Photo-Op",
-        desc: "Dress up like a true desert wanderer and pose with gentle camels for sensational Dubai/Sahara style portraits.",
+        title: "Camel Ride & Photos",
+        desc: "Take photos with camels across the open dunes, Sahara style.",
         price: "200,000 VND / Round / Person",
-        badge: "Million-Dollar View",
+        badge: "Great photos",
         image: "/images/camel-real.jpg"
       },
       {
         id: "ostrich",
         type: "adventure",
-        title: "Fun Ostrich Ride Experience",
-        desc: "A fun and amusing activity ideal for both families and adventurous youngsters on the sandy grounds.",
+        title: "Ostrich Ride",
+        desc: "A fun activity suitable for families and young children.",
         price: "100,000 VND / Round / Person",
-        badge: "Family Favorite",
+        badge: "Family friendly",
         image: "/images/ostrich-real.jpg"
       },
       {
         id: "sandboard",
         type: "adventure",
-        title: "Dune Sandboarding Thrill",
-        desc: "Glide down the steep white dunes on a custom sandboard, exhilarating rush and stunning desert photo moments.",
+        title: "Sandboarding",
+        desc: "Slide from the top of the dune into the soft white sand valley.",
         price: "50,000 VND / Board / Person",
-        badge: "Pure Fun & Photo",
+        badge: "Fun",
         image: "/images/sandboard.jpg"
       }
     ],
-    bookBtn: "Book Service / WhatsApp Inquiry"
+    bookBtn: "Book Now"
   },
   spots: {
     tag: "MUST-VISIT DESTINATIONS",
-    title: "Top Instagrammable Landmarks",
-    subtitle: "Every corner of White Sand Dunes offers an awe-inspiring natural canvas",
+    title: "Featured Photo Spots",
+    subtitle: "Every corner of Bau Trang makes a beautiful frame",
     items: [
       {
-        title: "Vast White Sand Dunes",
-        desc: "Rolling white dunes stretch toward the horizon beneath a dramatic and boundless sky.",
+        title: "White Sand Dunes",
+        desc: "Endless white slopes stretching to the horizon under a wide sky.",
         image: "/images/bau-trang-dunes-clouds.jpg"
       },
       {
-        title: "Bau Trang Lake Amid the Dunes",
-        desc: "Deep blue water meets golden sand in one of the region's most striking natural contrasts.",
+        title: "Bau Trang Lake",
+        desc: "A blue lake among golden dunes, a rare contrast in scenery.",
         image: "/images/bau-trang-lake-panorama.jpg"
       },
       {
-        title: "Sand Ripples at First Light",
-        desc: "Wind and low sunlight sculpt flowing patterns across the seemingly endless desert floor.",
+        title: "Morning Sand Ripples",
+        desc: "Wind and sunlight shape soft ripples across the sand.",
         image: "/images/bau-trang-sand-ripples.jpg"
       },
       {
-        title: "Sunset Over the Dune Crest",
-        desc: "Golden light sweeps across the dunes, revealing a cinematic and wide-open landscape.",
+        title: "Sunset on the Dunes",
+        desc: "Evening light turns the slopes gold, a cinematic view.",
         image: "/images/bau-trang-sunset-dunes.jpg"
       }
     ]
   },
   dining: {
     tag: "REST & RECHARGE",
-    title: "Desert Oasis Cafe & Dining",
-    subtitle: "After conquering the sunny sand dunes, cool off in our shaded oasis with refreshing drinks and local cuisine.",
-    menuIntro: "Serving fresh sweet coconuts, chilled iced coffees, and flavorful local coastal delicacies prepared on the spot.",
-    viewMenu: "Explore Menu",
-    reserveTable: "Reserve Table"
+    title: "Food & Drinks",
+    subtitle: "Take a break after your trip with local specialties and cold drinks.",
+    menuIntro: "Dune specialties, seafood, rice, noodles, hotpot and drinks.",
+    viewMenu: "View Menu",
+    reserveTable: "Reserve a Table"
   },
   gallery: {
     tag: "MOMENTS & MEMORIES",
-    title: "Real Traveler Snapshots",
-    subtitle: "Unforgettable smiles and radiant memories under the Mui Ne sunshine"
+    title: "Real Photos",
+    subtitle: "Moments at Bau Trang with Trieu Trang",
+    more: "Show more photos",
+    less: "Show less"
   },
   reviews: {
     tag: "TESTIMONIALS",
-    title: "What Our Guests Say",
-    items: [
-      {
-        name: "Minh Anh & Family",
-        from: "Hanoi, Vietnam",
-        quote: "Our driver was exceptionally enthusiastic! He guided us to pose on the Jeep and took photos looking like a magazine cover. 4:30 AM sunrise was magical!",
-        rating: 5
-      },
-      {
-        name: "Jessica & Mark",
-        from: "Sydney, Australia",
-        quote: "Riding the ATV over the dunes was exhilarating and totally safe. Smooth hotel pickup and wonderful support throughout. Highly recommend!",
-        rating: 5
-      },
-      {
-        name: "Quoc Bao",
-        from: "Ho Chi Minh City",
-        quote: "Tour rates are very fair and transparent with zero hidden fees. Clean vehicle, friendly driver, 10/10 service quality!",
-        rating: 5
-      }
-    ]
+    title: "What Guests Say"
   },
   faq: {
     tag: "FREQUENTLY ASKED QUESTIONS",
-    title: "Got Questions? We Have Answers",
+    title: "Frequently Asked Questions",
     items: [
       {
-        q: "What should I wear for the Jeep & Dune experience?",
-        a: "Bright colors such as white, red, yellow, orange, or boho nomad styles look stunning against the white sand and blue sky. Remember sunglasses and sunscreen!"
+        q: "What should I wear on a dune tour?",
+        a: "Choose comfortable clothes in bright colors such as white, red or yellow, which look great against the sand. Bring sunglasses, a hat and sunscreen."
       },
       {
-        q: "Do you offer hotel pickup and drop-off?",
-        a: "Yes! All our private Jeep tours include complimentary door-to-door roundtrip transfers from resorts along Nguyen Dinh Chieu, Huynh Thuc Khang, and central Mui Ne."
+        q: "How do I book a tour?",
+        a: "Call the hotline 0979 391 234 or message us on Zalo to plan your trip and reserve your spot."
       },
       {
-        q: "Is driving an ATV quad bike safe for beginners?",
-        a: "Completely safe! You will receive detailed throttle and brake instructions before heading out. An experienced guide can also ride along if preferred."
+        q: "Is the ATV ride safe?",
+        a: "Experienced drivers operate the ATVs and guests sit behind. Each ATV carries up to 1–2 guests, and the driver explains how to sit and basic safety before departure."
+      },
+      {
+        q: "Are gate tickets included in the price?",
+        a: "Listed prices do not include gate tickets and tax. Please call the hotline for the exact cost."
       }
     ]
   },
   cta: {
-    title: "Ready for an Unforgettable Desert Adventure?",
-    desc: "Contact us today for custom itinerary advice and secure the best departure slots!",
-    callNow: "Call Hotline: 0979 391 234",
-    chatZalo: "Instant Chat Consultation"
+    title: "Ready for Your Bau Trang Trip?",
+    desc: "Contact us to plan your trip and reserve your spot.",
+    callNow: "Call Now: 0979 391 234",
+    chatZalo: "Chat on Zalo"
   },
   footer: {
-    desc: "Premier White Sand Dunes tourism destination & trusted Jeep / ATV tour operator in Mui Ne, Phan Thiet.",
+    desc: "Trieu Trang Travel: Jeep tours, ATV rides and dune experiences at Bau Trang, Hoa Thang, Lam Dong.",
     quickLinks: "Quick Links",
-    contactInfo: "Contact Details",
+    contactInfo: "Contact",
     address: "Bau Trang, Hong Lam Village, Hoa Thang Commune, Lam Dong Province",
-    rights: "Copyright © White Sand Dunes. All rights reserved."
+    rights: "Copyright © Trieu Trang Travel."
   }
 };

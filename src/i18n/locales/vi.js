@@ -4,68 +4,68 @@ export const vi = {
     services: "Tour & Dịch Vụ",
     spots: "Điểm Check-in",
     gallery: "Thư Viện Ảnh",
-    dining: "Trạm Dừng Ẩm Thực",
+    dining: "Ẩm Thực",
     reviews: "Đánh Giá",
     faq: "Hỏi Đáp",
-    bookNow: "Đặt Vé Ngay",
+    bookNow: "Đặt Tour",
     hotline: "Hotline",
     callUs: "Gọi ngay"
   },
   hero: {
     tag: "THIÊN ĐƯỜNG SA MẠC MŨI NÉ",
     title: "Bàu Cát Trắng",
-    subtitle: "Trải nghiệm tốc độ đỉnh cao, ngắm bình minh và hoàng hôn huyền ảo trên đồi cát trắng cùng đội xe Jeep & ATV chuyên nghiệp.",
-    exploreBtn: "Khám phá dịch vụ",
-    galleryBtn: "Xem thư viện ảnh"
+    subtitle: "Tour xe Jeep, xe địa hình ATV và các trải nghiệm đồi cát cùng đội ngũ tài xế bản địa giàu kinh nghiệm.",
+    exploreBtn: "Xem dịch vụ",
+    galleryBtn: "Xem hình ảnh"
   },
   trust: {
-    badge: "CAM KẾT DỊCH VỤ HÀNG ĐẦU",
-    title: "Tại Sao Hơn 10.000+ Du Khách Chọn Chúng Tôi?",
+    badge: "VÌ SAO CHỌN TRIỀU TRANG",
+    title: "Trải Nghiệm Trọn Vẹn, Dịch Vụ Chuyên Nghiệp",
     items: [
       {
         icon: "directions_car",
-        title: "Xe Đời Mới & Đa Dạng",
-        desc: "Đội ngũ xe Jeep màu sắc thời thượng, xe địa hình ATV phân khối lớn bảo dưỡng định kỳ liên tục."
+        title: "Đội Xe Đa Dạng",
+        desc: "Xe Jeep, Land Cruiser và ATV 400cc, được bảo dưỡng định kỳ."
       },
       {
         icon: "photo_camera",
-        title: "Tài Xế Kiêm Thợ Ảnh Tận Tâm",
-        desc: "Nhiệt tình, am hiểu mọi góc check-in hoàng hôn/bình minh triệu view, hỗ trợ chụp ảnh và quay clip miễn phí."
+        title: "Tài Xế Bản Địa",
+        desc: "Tài xế chuyên nghiệp, thông thạo địa hình và các điểm check-in đẹp nhất."
       },
       {
         icon: "access_time_filled",
-        title: "Đón Trả Tận Nơi Chu Đáo",
-        desc: "Đúng giờ tuyệt đối, đón và trả khách tận sảnh resort, khách sạn tại Mũi Né - Phan Thiết."
+        title: "Đặt Tour Nhanh",
+        desc: "Đặt chỗ nhanh qua hotline hoặc Zalo, tư vấn lịch trình rõ ràng."
       },
       {
         icon: "verified_user",
-        title: "Giá Niêm Yết Minh Bạch",
-        desc: "Cam kết không phụ phí ẩn, không ép giá ngày lễ tết, tư vấn lộ trình chi tiết và tận tình 24/7."
+        title: "Giá Niêm Yết Rõ Ràng",
+        desc: "Bảng giá công khai theo từng dịch vụ. Giá chưa gồm vé cổng và thuế."
       }
     ]
   },
   services: {
-    title: "Dịch Vụ & Trải Nghiệm Đồi Cát",
+    title: "Dịch Vụ & Trải Nghiệm",
     tabs: {
       all: "Tất Cả",
       jeep: "Tour Xe Jeep",
-      adventure: "Mô Tô ATV & Sa Mạc"
+      adventure: "Trải Nghiệm Đồi Cát"
     },
     items: [
       {
         id: "jeep-tour",
         type: "jeep",
-        title: "Tour Xe Jeep Khám Phá Đồi Cát Bàu Trắng",
-        desc: "Chinh phục cồn cát trắng, check-in cung đường ven biển và xe nước vàng cam. Tùy chọn đón Bình Minh (4:30 sáng) hoặc ngắm Hoàng Hôn (13:30 chiều).",
-        price: "800.000đ / Xe (Tối đa 6 khách)",
-        badge: "Bình Minh & Hoàng Hôn",
+        title: "Tour Xe Jeep Đồi Cát Bay",
+        desc: "Tài xế đưa đoàn qua đồi cát trắng, hồ Bàu Trắng và các điểm check-in. Tối đa 6 khách/xe, khởi hành 13:30 đón hoàng hôn.",
+        price: "800.000đ / Xe",
+        badge: "Hoàng hôn",
         image: "/images/jeep-gate.jpg"
       },
       {
         id: "atv",
         type: "adventure",
-        title: "Thuê Xe Địa Hình ATV Leo Đồi",
-        desc: "Tự tay cầm lái đoàn xe ATV 400cc chinh phục những con dốc cát uốn lượn ngoạn mục, cảm nhận cảm giác mạnh và tự do tuyệt đối.",
+        title: "Xe Địa Hình ATV Leo Đồi",
+        desc: "Tài xế điều khiển ATV 400cc đưa quý khách vượt các triền cát dốc. Mỗi xe phục vụ 1–2 khách.",
         price: "800.000đ / 20 Phút",
         badge: "Cảm giác mạnh",
         image: "/images/atv-convoy.jpg"
@@ -73,126 +73,112 @@ export const vi = {
       {
         id: "camel",
         type: "adventure",
-        title: "Cưỡi Lạc Đà Sa Mạc Check-in",
-        desc: "Hóa thân thành nàng thơ du mục giữa đồi cát bao la, chụp những bức hình độc bản phong cách Dubai/Sahara cùng lạc đà.",
+        title: "Cưỡi Lạc Đà Check-in",
+        desc: "Chụp ảnh cùng lạc đà giữa đồi cát bao la, phong cách sa mạc Sahara.",
         price: "200.000đ / Vòng / Người",
-        badge: "Góc ảnh triệu view",
+        badge: "Góc ảnh đẹp",
         image: "/images/camel-real.jpg"
       },
       {
         id: "ostrich",
         type: "adventure",
-        title: "Trải Nghiệm Cưỡi Đà Điểu",
-        desc: "Hoạt động vui nhộn thích hợp cho cả gia đình và trẻ nhỏ, cảm giác ngồi trên lưng đà điểu sải bước cực kỳ phấn khích.",
+        title: "Cưỡi Đà Điểu",
+        desc: "Trải nghiệm vui nhộn, phù hợp cho cả gia đình và trẻ nhỏ.",
         price: "100.000đ / Vòng / Người",
-        badge: "Gia đình yêu thích",
+        badge: "Cho gia đình",
         image: "/images/ostrich-real.jpg"
       },
       {
         id: "sandboard",
         type: "adventure",
-        title: "Trượt Cát Sa Mạc Bàu Trắng",
-        desc: "Trượt từ đỉnh đồi cát dốc uốn lượn xuống thung lũng cát trắng mịn, trải nghiệm siêu phấn khích, check-in sống ảo cực chất.",
+        title: "Trượt Cát Bàu Trắng",
+        desc: "Trượt từ đỉnh đồi cát xuống thung lũng cát trắng mịn.",
         price: "50.000đ / Ván / Người",
-        badge: "Check-in cực đẹp",
+        badge: "Vui nhộn",
         image: "/images/sandboard.jpg"
       }
     ],
-    bookBtn: "Đặt Dịch Vụ / Nhận Tư Vấn"
+    bookBtn: "Đặt Tour"
   },
   spots: {
     tag: "MUST-VISIT DESTINATIONS",
-    title: "Những Tọa Độ Check-in Đẹp Nhất",
-    subtitle: "Mỗi bước chân tại Bàu Trắng đều là một bức tranh thiên nhiên tuyệt mỹ",
+    title: "Những Điểm Check-in Nổi Bật",
+    subtitle: "Mỗi góc tại Bàu Trắng đều là một khung hình đẹp",
     items: [
       {
-        title: "Đại Cảnh Đồi Cát Trắng",
-        desc: "Những triền cát trắng nối tiếp đến tận chân trời dưới tầng mây rộng lớn và đầy ấn tượng.",
+        title: "Đồi Cát Trắng",
+        desc: "Những triền cát trắng nối dài đến chân trời dưới bầu trời rộng.",
         image: "/images/bau-trang-dunes-clouds.jpg"
       },
       {
-        title: "Hồ Bàu Trắng Giữa Biển Cát",
-        desc: "Mặt hồ xanh thẳm nằm giữa những đụn cát vàng, tạo nên cảnh quan tương phản hiếm có.",
+        title: "Hồ Bàu Trắng",
+        desc: "Mặt hồ xanh giữa những đụn cát vàng, cảnh sắc tương phản hiếm có.",
         image: "/images/bau-trang-lake-panorama.jpg"
       },
       {
-        title: "Vân Cát Trong Nắng Sớm",
-        desc: "Gió và nắng tạo nên những đường vân cát mềm mại trải dài trên không gian mênh mông.",
+        title: "Vân Cát Ban Mai",
+        desc: "Gió và nắng tạo nên những đường vân cát mềm mại trải dài.",
         image: "/images/bau-trang-sand-ripples.jpg"
       },
       {
-        title: "Hoàng Hôn Trên Đỉnh Đồi Cát",
-        desc: "Ánh chiều phủ vàng các triền cát, mở ra khung cảnh khoáng đạt và đầy chất điện ảnh.",
+        title: "Hoàng Hôn Trên Đồi",
+        desc: "Ánh chiều phủ vàng các triền cát, khung cảnh đậm chất điện ảnh.",
         image: "/images/bau-trang-sunset-dunes.jpg"
       }
     ]
   },
   dining: {
     tag: "REST & RECHARGE",
-    title: "Trạm Dừng Chân Ẩm Thực & Coffee",
-    subtitle: "Sau khi chinh phục đồi cát nắng gió, hãy thư giãn với không gian mát mẻ và ẩm thực đặc sản Mũi Né.",
-    menuIntro: "Phục vụ nước dừa tươi ngọt lịm, cà phê đá mát lạnh và các món hải sản tươi sống miền biển chế biến thơm ngon.",
+    title: "Ẩm Thực & Giải Khát",
+    subtitle: "Nghỉ chân sau hành trình với các món đặc sản và thức uống mát lạnh.",
+    menuIntro: "Đặc sản đồi cát, hải sản, cơm, mì, lẩu và thức uống.",
     viewMenu: "Xem Thực Đơn",
     reserveTable: "Đặt Chỗ Trước"
   },
   gallery: {
     tag: "MOMENTS & MEMORIES",
-    title: "Thư Viện Ảnh Khách Hàng Thực Tế",
-    subtitle: "Khoảnh khắc rực rỡ và những nụ cười tỏa nắng cùng Bàu Cát Trắng"
+    title: "Hình Ảnh Thực Tế",
+    subtitle: "Những khoảnh khắc tại Bàu Trắng cùng Triều Trang",
+    more: "Xem thêm ảnh",
+    less: "Thu gọn"
   },
   reviews: {
     tag: "TESTIMONIALS",
-    title: "Khách Hàng Nói Gì Về Chúng Tôi?",
-    items: [
-      {
-        name: "Minh Anh & Gia Đình",
-        from: "Hà Nội",
-        quote: "Bác tài xế cực kỳ nhiệt tình! Chỉ tụi mình cách tạo dáng trên xe Jeep chụp đẹp như bìa tạp chí. Tour sáng 4h30 ngắm bình minh tuyệt vời lắm!",
-        rating: 5
-      },
-      {
-        name: "Jessica & Mark",
-        from: "Úc (Australia)",
-        quote: "Trải nghiệm ATV lái trên đồi cát rất phê và an toàn. Đội ngũ hỗ trợ chu đáo từ khâu đón ở resort. Nhất định sẽ quay lại!",
-        rating: 5
-      },
-      {
-        name: "Quốc Bảo",
-        from: "TP. Hồ Chí Minh",
-        quote: "Giá tour xe Jeep rất tốt và minh bạch so với mặt bằng chung. Xe mới, chạy êm và tài xế rất thân thiện. 10/10 cho dịch vụ!",
-        rating: 5
-      }
-    ]
+    title: "Khách Hàng Nói Gì"
   },
   faq: {
     tag: "FREQUENTLY ASKED QUESTIONS",
     title: "Câu Hỏi Thường Gặp",
     items: [
       {
-        q: "Đi tour xe Jeep và đồi cát nên mặc trang phục gì?",
-        a: "Nên chọn trang phục có tone màu nổi bật như trắng, đỏ, vàng, cam hoặc phong cách boho/du mục để tương phản tuyệt đẹp với nền cát trắng và bầu trời xanh. Đừng quên kính râm và kem chống nắng!"
+        q: "Nên mặc gì khi đi tour đồi cát?",
+        a: "Nên chọn trang phục thoải mái, màu nổi như trắng, đỏ, vàng để lên ảnh đẹp trên nền cát. Mang theo kính râm, nón và kem chống nắng."
       },
       {
-        q: "Tour có đón trả tận nơi tại khách sạn không?",
-        a: "Có! Tất cả các tour xe Jeep riêng của chúng tôi đều hỗ trợ đón và trả khách tận nơi miễn phí tại sảnh các resort/khách sạn dọc cung đường Nguyễn Đình Chiểu, Huỳnh Thúc Kháng và trung tâm Mũi Né."
+        q: "Đặt tour như thế nào?",
+        a: "Gọi hotline 0979 391 234 hoặc nhắn Zalo để được tư vấn lịch trình và giữ chỗ."
       },
       {
-        q: "Tự lái xe địa hình ATV có an toàn không?",
-        a: "Rất an toàn! Trước khi lái bạn sẽ được hướng dẫn cặn kẽ cách điều khiển ga, phanh. Ngoài ra bạn có thể chọn đi cùng kỹ thuật viên lái phụ nếu chưa tự tin cầm lái trên cồn cát dốc."
+        q: "Đi ATV có an toàn không?",
+        a: "Xe ATV do tài xế có kinh nghiệm điều khiển, khách ngồi phía sau. Mỗi xe tối đa 1–2 khách, tài xế sẽ hướng dẫn tư thế ngồi và lưu ý an toàn trước khi khởi hành."
+      },
+      {
+        q: "Giá tour đã gồm vé cổng chưa?",
+        a: "Giá niêm yết chưa bao gồm vé cổng và thuế. Vui lòng liên hệ hotline để được báo chi phí cụ thể."
       }
     ]
   },
   cta: {
-    title: "Sẵn Sàng Cho Chuyến Phiêu Lưu Tại Bàu Cát Trắng?",
-    desc: "Liên hệ ngay hôm nay để nhận tư vấn lộ trình chi tiết và giữ chỗ cho khung giờ đẹp nhất!",
+    title: "Sẵn Sàng Cho Chuyến Đi Bàu Trắng?",
+    desc: "Liên hệ để được tư vấn lịch trình và giữ chỗ.",
     callNow: "Gọi Ngay: 0979 391 234",
-    chatZalo: "Tư Vấn Zalo Miễn Phí"
+    chatZalo: "Tư Vấn Qua Zalo"
   },
   footer: {
-    desc: "Khu du lịch & Dịch vụ Tour xe Jeep, ATV Đồi Cát Trắng Mũi Né uy tín hàng đầu Phan Thiết.",
+    desc: "Du Lịch Triều Trang: tour xe Jeep, ATV và trải nghiệm đồi cát tại Bàu Trắng, Hòa Thắng, Lâm Đồng.",
     quickLinks: "Liên Kết Nhanh",
     contactInfo: "Thông Tin Liên Hệ",
     address: "Bàu Trắng, thôn Hồng Lâm, xã Hòa Thắng, tỉnh Lâm Đồng",
-    rights: "Bản quyền thuộc về Bàu Cát Trắng. Đã đăng ký bản quyền."
+    rights: "Bản quyền thuộc về Du Lịch Triều Trang."
   }
 };

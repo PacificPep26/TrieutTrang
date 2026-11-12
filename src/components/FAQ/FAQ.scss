@@ -1,7 +1,11 @@
 @use '../../styles/variables' as *;
 
 .faq-section {
-  padding: 5rem 0;
+  padding: 2.5rem 0;
+
+  @media (min-width: 768px) {
+    padding: 5rem 0;
+  }
   background-color: #ffffff;
 }
 

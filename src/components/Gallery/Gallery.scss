@@ -1,28 +1,45 @@
 @use '../../styles/variables' as *;
 
 .gallery-section {
-  padding: $spacing-lg 0;
+  padding: 3rem 0;
   background-color: #fff;
+
+  @media (min-width: 768px) {
+    padding: $spacing-lg 0;
+  }
 }
 
 /* Masonry Grid Layout */
 .masonry-grid {
-  column-count: 1;
-  column-gap: 1.5rem;
-  margin-top: 2rem;
+  column-count: 2;
+  column-gap: 0.6rem;
+  margin-top: 1.25rem;
 
   @media (min-width: 576px) {
-    column-count: 2;
+    column-gap: 1.5rem;
+    margin-top: 2rem;
   }
 
   @media (min-width: 992px) {
     column-count: 3;
   }
+
+  // phones: only the first 6 photos until "show more" is pressed
+  @media (max-width: 575.98px) {
+    &:not(.expanded) .masonry-item--extra {
+      display: none;
+    }
+  }
 }
 
 .masonry-item {
   position: relative;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.6rem;
+
+  @media (min-width: 576px) {
+    margin-bottom: 1.5rem;
+  }
+
   overflow: hidden;
   border-radius: 8px;
   cursor: pointer;
@@ -45,7 +62,12 @@
 .gallery-actions {
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
+
+  // the toggle only exists for the phone layout
+  @media (min-width: 576px) {
+    display: none;
+  }
 
   .gallery-toggle-btn {
     display: inline-flex;

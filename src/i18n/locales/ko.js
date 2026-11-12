@@ -1,72 +1,71 @@
 export const ko = {
   nav: {
     home: "홈",
-    services: "투어 & 액티비티",
+    services: "투어 & 서비스",
     spots: "포토 스팟",
     gallery: "갤러리",
-    dining: "카페 & 식당",
-    reviews: "고객 후기",
+    dining: "식사",
+    reviews: "후기",
     faq: "자주 묻는 질문",
-    bookNow: "지금 예약하기",
+    bookNow: "예약하기",
     hotline: "핫라인",
     callUs: "전화하기"
   },
   hero: {
     tag: "무이네 사막의 낙원",
-    title: "화이트 샌듄 (바우짱)",
-    subtitle: "끝없이 펼쳐진 하얀 모래언덕 위에서 즐기는 지프 투어와 짜릿한 ATV 사륜바이크, 잊지 못할 일출과 일몰을 경험해보세요.",
-    exploreBtn: "투어 상품 보기",
-    galleryBtn: "포토 갤러리"
+    title: "바우짱",
+    subtitle: "경험 많은 현지 기사와 함께하는 지프 투어, ATV, 모래언덕 체험.",
+    exploreBtn: "서비스 보기",
+    galleryBtn: "사진 보기"
   },
   trust: {
-    badge: "최고의 서비스 보증",
-    title: "10,000명 이상의 여행자가 선택한 이유",
+    badge: "트리에우짱을 선택하는 이유",
+    title: "편안한 체험, 전문적인 서비스",
     items: [
       {
         icon: "directions_car",
-        title: "신형 지프 & ATV 완비",
-        desc: "트렌디한 컬러의 지프차와 강력한 최신형 ATV 바이크를 철저하게 정비 및 관리합니다."
+        title: "다양한 차량",
+        desc: "지프, 랜드크루저, 400cc ATV를 정기적으로 정비하여 운행합니다."
       },
       {
         icon: "photo_camera",
-        title: "인생샷 전문 기사님 동행",
-        desc: "포토존과 각도를 완벽히 꿰뚫고 있는 친절한 현지 기사님이 멋진 인생샷과 영상을 무료로 남겨드립니다."
+        title: "현지 전문 기사",
+        desc: "지형과 최고의 촬영 명소를 잘 아는 전문 기사가 안내합니다."
       },
       {
         icon: "access_time_filled",
-        title: "호텔 & 리조트 무료 픽업",
-        desc: "무이네 전 지역 리조트 및 호텔 로비에서 지체 없이 정확한 시간에 픽업 및 샌딩을 진행합니다."
+        title: "간편한 예약",
+        desc: "핫라인 또는 잘로로 빠르게 예약하고 일정을 안내받으세요."
       },
       {
         icon: "verified_user",
-        title: "투명한 정찰제 가격",
-        desc: "숨겨진 추가 요금이나 팁 강요 없이 공식 정찰 가격으로 24시간 친절 상담을 제공합니다."
+        title: "명확한 가격",
+        desc: "서비스별 가격을 공개합니다. 입장권과 세금은 별도입니다."
       }
     ]
   },
   services: {
-    tag: "TOURS & EXPERIENCES",
-    title: "인기 지프 투어 & 액티비티",
+    title: "서비스 & 체험",
     tabs: {
-      all: "전체 보기",
+      all: "전체",
       jeep: "지프 투어",
-      adventure: "ATV 바이크 & 이색 체험"
+      adventure: "모래언덕 체험"
     },
     items: [
       {
-        id: "jeep-sunset",
+        id: "jeep-tour",
         type: "jeep",
-        title: "레드 샌듄 선셋 지프 투어",
-        desc: "오후 1:30 출발하여 붉게 물드는 로맨틱한 일몰과 함께 요정의 샘, 피シング 빌리지를 둘러보는 코스입니다.",
-        price: "800,000 VND / 차량 (최대 6인)",
-        badge: "오후 13:30 - 18:00",
+        title: "모래언덕 지프 투어",
+        desc: "기사가 하얀 모래언덕과 바우짱 호수, 포토 스팟으로 안내합니다. 1대 최대 6명, 일몰을 위해 오후 1시 30분에 출발합니다.",
+        price: "800,000 VND / 1대",
+        badge: "일몰",
         image: "/images/jeep-gate.jpg"
       },
       {
         id: "atv",
         type: "adventure",
-        title: "화이트 샌듄 ATV 사륜바이크 체험",
-        desc: "모래 언덕을 가로지르는 스릴 넘치는 스피드! 직접 핸들을 잡고 짜릿한 사막 질주를 즐겨보세요.",
+        title: "ATV 모래언덕 체험",
+        desc: "기사가 400cc ATV를 운전해 가파른 모래 경사를 오릅니다. 1대당 1~2명 탑승합니다.",
         price: "800,000 VND / 20분",
         badge: "스릴 만점",
         image: "/images/atv-convoy.jpg"
@@ -74,126 +73,112 @@ export const ko = {
       {
         id: "camel",
         type: "adventure",
-        title: "사막 낙타 체험 & 포토존",
-        desc: "하얀 모래언덕 위에서 온순한 낙타와 함께 두바이/사하라 사막 분위기의 독보적인 인생샷을 남겨보세요.",
-        price: "200,000 VND / 1인 1바퀴",
-        badge: "인기 포토존",
+        title: "낙타 타기 & 촬영",
+        desc: "넓은 모래언덕에서 낙타와 함께 사하라 분위기의 사진을 남겨보세요.",
+        price: "200,000 VND / 1회 / 1인",
+        badge: "인생샷",
         image: "/images/camel-real.jpg"
       },
       {
         id: "ostrich",
         type: "adventure",
-        title: "타조 타기 이색 체험",
-        desc: "온 가족이 함께 즐길 수 있는 유쾌한 이색 체험으로, 모래언덕 위를 성큼성큼 달리는 재미를 느껴보세요.",
-        price: "100,000 VND / 1인 1바퀴",
+        title: "타조 타기",
+        desc: "가족과 어린이 모두 즐길 수 있는 재미있는 체험입니다.",
+        price: "100,000 VND / 1회 / 1인",
         badge: "가족 추천",
         image: "/images/ostrich-real.jpg"
       },
       {
         id: "sandboard",
         type: "adventure",
-        title: "바우짱 사막 샌드보딩 (모래 썰매)",
-        desc: "가파른 모래 언덕을 타고 쏜살같이 미끄러져 내려오는 스릴 만점 모래썰매 체험!",
-        price: "50,000 VND / 1인 보드",
-        badge: "인생샷 & 짜릿함",
+        title: "샌드보드",
+        desc: "모래언덕 정상에서 부드러운 하얀 모래 골짜기까지 미끄러져 내려갑니다.",
+        price: "50,000 VND / 1보드 / 1인",
+        badge: "즐거움",
         image: "/images/sandboard.jpg"
       }
     ],
-    bookBtn: "체험 예약 / 카카오톡·왓츠앱 문의"
+    bookBtn: "예약하기"
   },
   spots: {
     tag: "MUST-VISIT DESTINATIONS",
-    title: "무이네 대표 필수 포토존",
-    subtitle: "화이트 샌듄의 모든 순간은 영화 속 한 장면처럼 아름답습니다",
+    title: "대표 포토 스팟",
+    subtitle: "바우짱의 모든 곳이 한 장의 아름다운 사진이 됩니다",
     items: [
       {
-        title: "끝없이 펼쳐진 화이트 샌듄",
-        desc: "웅장한 하늘 아래 새하얀 모래 언덕이 지평선 너머까지 이어집니다.",
+        title: "하얀 모래언덕",
+        desc: "넓은 하늘 아래 지평선까지 이어지는 하얀 모래 경사.",
         image: "/images/bau-trang-dunes-clouds.jpg"
       },
       {
-        title: "모래 언덕 속 바우짱 호수",
-        desc: "깊고 푸른 호수와 황금빛 모래가 만나 독특하고 장엄한 풍경을 만듭니다.",
+        title: "바우짱 호수",
+        desc: "황금빛 모래언덕 사이의 푸른 호수, 보기 드문 대비의 풍경.",
         image: "/images/bau-trang-lake-panorama.jpg"
       },
       {
-        title: "아침 햇살 속 모래 물결",
-        desc: "바람과 낮은 햇살이 끝없이 펼쳐진 모래 위에 부드러운 무늬를 새깁니다.",
+        title: "아침의 모래결",
+        desc: "바람과 햇살이 만든 부드러운 모래 무늬가 펼쳐집니다.",
         image: "/images/bau-trang-sand-ripples.jpg"
       },
       {
-        title: "모래 언덕 위의 노을",
-        desc: "황금빛 노을이 모래 능선을 감싸며 영화처럼 광활한 장면을 펼쳐 보입니다.",
+        title: "언덕 위의 일몰",
+        desc: "저녁 빛이 모래 경사를 금빛으로 물들이는 영화 같은 풍경.",
         image: "/images/bau-trang-sunset-dunes.jpg"
       }
     ]
   },
   dining: {
     tag: "REST & RECHARGE",
-    title: "오아시스 카페 & 레스토랑",
-    subtitle: "뜨거운 사막 투어 후 시원한 그늘 아래에서 맛있는 로컬 음료와 신선한 해산물 요리로 에너지를 충전하세요.",
-    menuIntro: "달콤하고 시원한 통 코코넛 워터, 베트남 연유 커피(쓰아다), 신선한 해산물 요리가 준비되어 있습니다.",
-    viewMenu: "메뉴판 보기",
-    reserveTable: "테이블 예약"
+    title: "식사 & 음료",
+    subtitle: "투어 후 현지 특산 요리와 시원한 음료로 휴식하세요.",
+    menuIntro: "모래언덕 특산 요리, 해산물, 밥, 면, 전골, 음료.",
+    viewMenu: "메뉴 보기",
+    reserveTable: "자리 예약"
   },
   gallery: {
     tag: "MOMENTS & MEMORIES",
-    title: "실제 여행자 갤러리",
-    subtitle: "화이트 샌듄에서 담아낸 눈부신 미소와 특별한 여행의 순간들"
+    title: "실제 사진",
+    subtitle: "트리에우짱과 함께한 바우짱의 순간들",
+    more: "사진 더 보기",
+    less: "접기"
   },
   reviews: {
     tag: "TESTIMONIALS",
-    title: "여행자들의 솔직한 후기",
-    items: [
-      {
-        name: "김민지 & 친구들",
-        from: "대한민국 서울",
-        quote: "기사님이 사진을 정말 성심성의껏 찍어주셨어요! 지프 위에서 포즈도 다 알려주시고 새벽 4시 30분 일출 투어는 평생 잊지 못할 추억입니다.",
-        rating: 5
-      },
-      {
-        name: "이준호",
-        from: "대한민국 부산",
-        quote: "ATV 바이크 운전이 너무 짜릿했습니다. 리조트 픽업도 정확하고 바가지요금 없이 정직해서 한국인 여행자들에게 적극 추천합니다!",
-        rating: 5
-      },
-      {
-        name: "박서연 가족",
-        from: "대한민국 대구",
-        quote: "부모님 모시고 갔는데 차도 깨끗하고 기사님이 매우 친절하셨어요. 가격 대비 만족도 200%입니다!",
-        rating: 5
-      }
-    ]
+    title: "고객 후기"
   },
   faq: {
     tag: "FREQUENTLY ASKED QUESTIONS",
     title: "자주 묻는 질문",
     items: [
       {
-        q: "어떤 옷을 입고 가야 사진이 잘 나오나요?",
-        a: "하얀 모래와 푸른 하늘에 대비되는 레드, 옐로우, 화이트 계열의 원피스나 보헤미안 스타일 의상을 입으시면 인생샷을 남기실 수 있습니다. 선글라스와 선크림은 필수입니다!"
+        q: "모래언덕 투어에는 어떤 옷이 좋나요?",
+        a: "활동하기 편한 옷을 추천하며, 흰색·빨간색·노란색처럼 모래와 대비되는 색이 사진에 잘 나옵니다. 선글라스, 모자, 자외선 차단제를 챙기세요."
       },
       {
-        q: "호텔 픽업 및 드랍이 포함되어 있나요?",
-        a: "네! 모든 단독 지프 투어는 무이네 응우옌딘찌에우, 후인툭캉 거리 및 시내 리조트/호텔 왕복 픽업 서비스가 무료로 포함되어 있습니다."
+        q: "투어는 어떻게 예약하나요?",
+        a: "핫라인 0979 391 234로 전화하거나 잘로로 메시지를 보내 일정을 상담하고 예약하세요."
       },
       {
-        q: "초보자도 ATV 사륜바이크를 직접 운전할 수 있나요?",
-        a: "네, 출발 전 조작법(가속, 브레이크)을 친절히 안내해 드립니다. 직접 운전이 부담스러우시면 숙련된 전문 가이드가 함께 동승하여 안전하게 즐기실 수 있습니다."
+        q: "ATV는 안전한가요?",
+        a: "경험 많은 기사가 ATV를 운전하며 손님은 뒤에 탑승합니다. 1대당 최대 1~2명이며, 출발 전 탑승 자세와 안전 수칙을 안내합니다."
+      },
+      {
+        q: "가격에 입장권이 포함되어 있나요?",
+        a: "표시된 가격에는 입장권과 세금이 포함되어 있지 않습니다. 정확한 비용은 핫라인으로 문의해 주세요."
       }
     ]
   },
   cta: {
-    title: "화이트 샌듄으로 떠날 준비가 되셨나요?",
-    desc: "지금 바로 문의하고 최고의 시간대에 단독 지프 투어를 예약해보세요!",
-    callNow: "핫라인: 0979 391 234",
-    chatZalo: "메신저 실시간 상담"
+    title: "바우짱 여행 준비되셨나요?",
+    desc: "연락 주시면 일정 상담과 예약을 도와드립니다.",
+    callNow: "전화: 0979 391 234",
+    chatZalo: "잘로로 문의"
   },
   footer: {
-    desc: "무이네 화이트 샌듄 최고의 지프 & ATV 전문 투어 서비스.",
+    desc: "트리에우짱 여행: 럼동성 호아탕 바우짱의 지프 투어, ATV, 모래언덕 체험.",
     quickLinks: "바로가기",
-    contactInfo: "연락처 및 위치",
+    contactInfo: "연락처",
     address: "베트남 럼동성 호아탕사 홍럼마을 바우짱",
-    rights: "Copyright © White Sand Dunes. All rights reserved."
+    rights: "Copyright © 트리에우짱 여행."
   }
 };

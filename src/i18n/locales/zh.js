@@ -2,198 +2,183 @@ export const zh = {
   nav: {
     home: "首页",
     services: "行程与服务",
-    spots: "必打卡景点",
-    gallery: "照片墙",
-    dining: "绿洲餐厅",
-    reviews: "游客评价",
+    spots: "拍照打卡点",
+    gallery: "图库",
+    dining: "餐饮",
+    reviews: "评价",
     faq: "常见问题",
     bookNow: "立即预订",
-    hotline: "服务热线",
-    callUs: "致电我们"
+    hotline: "热线",
+    callUs: "拨打电话"
   },
   hero: {
-    tag: "美奈沙漠秘境",
-    title: "白沙丘探险",
-    subtitle: "驾驶酷炫吉普车与大马力ATV沙滩车，纵横连绵浩瀚的纯白沙丘，迎接震撼心灵的日出与日落。",
-    exploreBtn: "探索精彩行程",
-    galleryBtn: "浏览照片库"
+    tag: "美奈沙漠天堂",
+    title: "白沙丘",
+    subtitle: "吉普车行程、ATV沙滩车与沙丘体验，由经验丰富的当地司机带您出行。",
+    exploreBtn: "查看服务",
+    galleryBtn: "查看图片"
   },
   trust: {
-    badge: "高品质服务保障",
-    title: "为何超过10,000+游客选择我们？",
+    badge: "为什么选择 Triều Trang",
+    title: "轻松的体验，专业的服务",
     items: [
       {
         icon: "directions_car",
-        title: "高颜值新车舰队",
-        desc: "色彩鲜艳的时尚吉普车队与大排量ATV越野车，定期严格保养，安全有保障。"
+        title: "多样化车队",
+        desc: "吉普车、陆地巡洋舰和400cc ATV，定期保养。"
       },
       {
         icon: "photo_camera",
-        title: "司机兼金牌摄影师",
-        desc: "熟悉每一个绝美出片角度与光线，免费耐心指导拍照摆姿势，捕捉大片级瞬间。"
+        title: "当地专业司机",
+        desc: "熟悉地形和最佳拍照点的专业司机全程带队。"
       },
       {
         icon: "access_time_filled",
-        title: "酒店门对门贴心接送",
-        desc: "全程准时准点，专车往返接送覆盖美奈及藩切各大度假村与酒店大堂。"
+        title: "预订便捷",
+        desc: "通过热线或Zalo快速预订，行程清晰。"
       },
       {
         icon: "verified_user",
-        title: "透明公道明码标价",
-        desc: "绝无任何隐形消费与强制小费，节假日不恶意涨价，24小时中文/多语种贴心答疑。"
+        title: "价格清晰",
+        desc: "各项服务价格公开。价格不含门票和税费。"
       }
     ]
   },
   services: {
-    tag: "TOURS & EXPERIENCES",
-    title: "热门吉普车游与特色体验",
+    title: "服务与体验",
     tabs: {
-      all: "全部项目",
-      jeep: "吉普车游",
-      adventure: "ATV越野与沙漠骑行"
+      all: "全部",
+      jeep: "吉普车行程",
+      adventure: "沙丘体验"
     },
     items: [
       {
-        id: "jeep-sunset",
+        id: "jeep-tour",
         type: "jeep",
-        title: "红沙丘日落浪漫吉普车游",
-        desc: "下午1:30启程，沐浴在夕阳余晖下，漫步仙女溪并探访传统渔村人文风貌。",
-        price: "800,000 越南盾 / 车（最多6人）",
-        badge: "午后 13:30 - 18:00",
+        title: "沙丘吉普车行程",
+        desc: "司机带您穿越白沙丘、白沙湖和各大拍照点。每车最多6人，下午1:30出发，欣赏日落。",
+        price: "800,000 越南盾 / 车",
+        badge: "日落",
         image: "/images/jeep-gate.jpg"
       },
       {
         id: "atv",
         type: "adventure",
-        title: "白沙丘ATV越野摩托驰骋",
-        desc: "亲手掌控油门征服陡峭沙峰，在连绵起伏的沙浪中释放澎湃激情与绝对自由。",
+        title: "ATV沙滩车爬沙丘",
+        desc: "由司机驾驶400cc ATV，带您冲上陡峭的沙坡。每辆车载1–2位客人。",
         price: "800,000 越南盾 / 20分钟",
-        badge: "极速刺激",
+        badge: "刺激",
         image: "/images/atv-convoy.jpg"
       },
       {
         id: "camel",
         type: "adventure",
-        title: "沙漠骆驼拍照与骑行",
-        desc: "化身沙漠旅人漫步无垠沙丘，与温顺骆驼合影，随手定格迪拜/撒哈拉异域风情大片。",
+        title: "骑骆驼拍照",
+        desc: "在辽阔的沙丘上与骆驼合影，撒哈拉风格。",
         price: "200,000 越南盾 / 圈 / 人",
-        badge: "网美打卡",
+        badge: "出片",
         image: "/images/camel-real.jpg"
       },
       {
         id: "ostrich",
         type: "adventure",
-        title: "欢乐骑鸵鸟趣味体验",
-        desc: "适合亲子家庭与年轻情侣的趣味项目，感受骑在鸵鸟背上奔跑的欢笑与独特乐趣。",
+        title: "骑鸵鸟",
+        desc: "有趣的体验，适合全家和小朋友。",
         price: "100,000 越南盾 / 圈 / 人",
-        badge: "亲子最爱",
+        badge: "亲子推荐",
         image: "/images/ostrich-real.jpg"
       },
       {
         id: "sandboard",
         type: "adventure",
-        title: "白沙丘滑沙趣味挑战",
-        desc: "手持专用滑沙板从陡峭沙丘飞驰而下，体验风驰电掣的快感，拍摄超吸睛动感大片。",
+        title: "滑沙",
+        desc: "从沙丘顶端滑入柔软的白沙谷地。",
         price: "50,000 越南盾 / 板 / 人",
-        badge: "出片超美",
+        badge: "好玩",
         image: "/images/sandboard.jpg"
       }
     ],
-    bookBtn: "预订体验 / 微信·WhatsApp咨询"
+    bookBtn: "立即预订"
   },
   spots: {
     tag: "MUST-VISIT DESTINATIONS",
-    title: "美奈无可错过的绝美坐标",
-    subtitle: "在白沙丘的每一步，都是大自然精雕细琢的壮丽画卷",
+    title: "热门拍照打卡点",
+    subtitle: "白沙丘的每个角落都是一幅美景",
     items: [
       {
-        title: "辽阔壮美的白沙丘",
-        desc: "洁白起伏的沙丘在壮阔天空下延伸至天际，展现震撼视野。",
+        title: "白沙丘",
+        desc: "辽阔天空下，白色沙坡绵延至天际。",
         image: "/images/bau-trang-dunes-clouds.jpg"
       },
       {
-        title: "沙海之中的白湖",
-        desc: "深蓝湖水与金色沙丘在此交汇，形成当地罕见而鲜明的自然奇景。",
+        title: "白沙湖",
+        desc: "金色沙丘间的一汪碧湖，难得一见的反差景色。",
         image: "/images/bau-trang-lake-panorama.jpg"
       },
       {
-        title: "晨光下的细腻沙纹",
-        desc: "风与低角度阳光在无垠沙地上雕刻出柔美而富有层次的纹理。",
+        title: "晨光沙纹",
+        desc: "风与阳光塑造出柔和的沙纹，延伸向远方。",
         image: "/images/bau-trang-sand-ripples.jpg"
       },
       {
-        title: "沙丘之巅的落日",
-        desc: "金色暮光掠过起伏沙丘，铺展开辽阔而极具电影感的壮丽景象。",
+        title: "沙丘日落",
+        desc: "夕阳把沙坡染成金色，宛如电影画面。",
         image: "/images/bau-trang-sunset-dunes.jpg"
       }
     ]
   },
   dining: {
     tag: "REST & RECHARGE",
-    title: "绿洲补给站：咖啡与特色美食",
-    subtitle: "在感受完日光与沙海的激情后，移步清凉舒适的绿洲驿站，犒劳味蕾，恢复满满活力。",
-    menuIntro: "提供清凉甘甜的天然椰子水、地道浓郁的越南冰滴咖啡以及现点现做的海滨特色海鲜。",
-    viewMenu: "查看精选菜单",
-    reserveTable: "提前预订餐位"
+    title: "餐饮与饮品",
+    subtitle: "行程结束后，来品尝当地特色美食和冰凉饮品。",
+    menuIntro: "沙丘特色菜、海鲜、米饭、面条、火锅和饮品。",
+    viewMenu: "查看菜单",
+    reserveTable: "预订座位"
   },
   gallery: {
     tag: "MOMENTS & MEMORIES",
-    title: "真实游客精彩瞬间",
-    subtitle: "在美奈灿烂阳光下定格的欢声笑语与难忘记忆"
+    title: "实拍图片",
+    subtitle: "与 Triều Trang 一起在白沙丘留下的瞬间",
+    more: "查看更多图片",
+    less: "收起"
   },
   reviews: {
     tag: "TESTIMONIALS",
-    title: "来自全球游客的真实心声",
-    items: [
-      {
-        name: "陈女士 & 闺蜜",
-        from: "中国广州",
-        quote: "司机小哥太棒了！非常有耐心帮我们拍照，还会找光线和教摆动作，出片率100%！日出行程虽然要早起但绝对值回票价！",
-        rating: 5
-      },
-      {
-        name: "张先生一家",
-        from: "中国上海",
-        quote: "包车车况非常好，司机准时到度假村接我们。ATV沙滩车超级刺激好玩，明码标价没有任何坑，值得强烈推荐！",
-        rating: 5
-      },
-      {
-        name: "李浩",
-        from: "中国北京",
-        quote: "客服沟通非常顺畅，安排很周到。沙漠骑骆驼和黄色咖啡车拍出的照片发朋友圈被问爆了！",
-        rating: 5
-      }
-    ]
+    title: "客人评价"
   },
   faq: {
     tag: "FREQUENTLY ASKED QUESTIONS",
-    title: "常见疑问解答",
+    title: "常见问题",
     items: [
       {
-        q: "去沙丘游玩穿什么衣服拍照最好看？",
-        a: "推荐穿着与白沙蓝天形成鲜明对比的纯白色、大红色、亮黄色、橙色长裙，或波西米亚风格服饰。切记带好墨镜与防晒霜！"
+        q: "沙丘行程适合穿什么？",
+        a: "建议穿舒适的衣服，白色、红色、黄色等亮色在沙地上更出片。请携带墨镜、帽子和防晒霜。"
       },
       {
-        q: "行程包含酒店接送吗？",
-        a: "是的！我们所有的私人吉普车游均包含美奈阮庭炤路、黄叔抗路及主要度假村的免费双程点对点专车接送。"
+        q: "如何预订行程？",
+        a: "拨打热线 0979 391 234 或通过Zalo留言，即可咨询行程并预订。"
       },
       {
-        q: "没有经验可以自己开ATV沙滩车吗？",
-        a: "完全可以！发车前会有专业教练详细讲解油门与刹车要领。如果您感到紧张，也可以让专业向导陪同辅助驾驶。"
+        q: "乘坐ATV安全吗？",
+        a: "ATV由经验丰富的司机驾驶，客人坐在后座。每辆车最多1–2位客人，出发前司机会讲解坐姿和安全须知。"
+      },
+      {
+        q: "价格包含门票吗？",
+        a: "标价不含门票和税费。具体费用请致电热线咨询。"
       }
     ]
   },
   cta: {
-    title: "准备好开启您的美奈沙丘探险了吗？",
-    desc: "立即与我们取得联系，获取专属行程规划并锁定最佳出发时间！",
-    callNow: "热线直拨: 0979 391 234",
-    chatZalo: "在线实时咨询 (微信/WhatsApp)"
+    title: "准备好前往白沙丘了吗？",
+    desc: "联系我们，获取行程建议并预订。",
+    callNow: "立即致电：0979 391 234",
+    chatZalo: "Zalo咨询"
   },
   footer: {
-    desc: "美奈白沙丘高品质吉普车游与ATV沙滩车探险服务商。",
+    desc: "Triều Trang 旅游：林同省和胜乡白沙丘的吉普车行程、ATV与沙丘体验。",
     quickLinks: "快速链接",
-    contactInfo: "联系方式与地址",
+    contactInfo: "联系方式",
     address: "越南林同省和胜乡鸿林村白沙湖（Bàu Trắng）",
-    rights: "版权所有 © 白沙丘探险. 保留所有权利."
+    rights: "版权所有 © Triều Trang 旅游。"
   }
 };
